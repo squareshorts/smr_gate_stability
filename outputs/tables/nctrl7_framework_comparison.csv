@@ -1,0 +1,5 @@
+framework,Empirical fit,Separability,No overclaiming,EEG testability,Broadband handling,Burst handling,Conservative theory,Parsimony,total_score,max_score,pct_score
+Stuart-Landau (SL),1,1,0,0,0,0,0,0,2,16,12.5
+Singular Perturbation (SPT),1,2,1,1,0,0,1,1,7,16,43.75
+Generic Closed-Loop Feedback,1,1,1,2,1,1,2,2,11,16,68.75
+Active Damping / Noise-Control (NCTRL),2,2,2,2,2,2,2,2,16,16,100.0

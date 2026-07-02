@@ -1,0 +1,7 @@
+regime,label,epsilon,alpha_x,beta_y,K_beta,x_final,y_final,smr_acquired,beta_stabilized,violation_rate,regime_class
+R1_stabilization_only,R1: Fast beta-stabilization (no SMR acquisition),varies,0.001,5.0,2.0,0.09285611279362138,0.03825685595053211,False,True,0.0,C_stabilization_only
+R2_acquisition_only,R2: SMR acquisition (no beta-stabilization),varies,0.08,0.05,0.0,6.154979595024044e+17,1.3278552653150766e+16,True,False,0.8213333333333334,B_acquisition_only
+R3_both,R3: Both acquisition and stabilization,varies,0.06,4.0,2.0,1870904341109.8584,249080217195.3281,True,False,0.8208333333333333,B_acquisition_only
+R4_neither,R4: Neither acquisition nor stabilization,varies,0.002,0.05,0.0,0.18064270024496745,0.09281938688482179,False,True,0.0,C_stabilization_only
+R5_barrier_violation,R5: Barrier violation destabilizes training,varies,0.06,0.3,0.0,9.965267850533952,2.0195498966961916,True,False,0.784,B_acquisition_only
+R6_broadband_contamination,R6: Broadband contamination (apparent regulation),varies,0.05,3.0,1.5,2580123885857.956,342835118332.4414,True,False,0.8055833333333333,B_acquisition_only

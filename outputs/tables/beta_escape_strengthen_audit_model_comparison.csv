@@ -1,0 +1,21 @@
+Outcome,Model,Metric,Value,Audit_Status,Notes
+smr_snr_change,Model A: Mean Power,R2 (LOOCV),-0.231204562501728,Valid but weak,Negative R2 for Model A means predicting the mean is better.
+smr_snr_change,Model B: Mean Power + Controls,R2 (LOOCV),-0.1404138885093844,Valid but weak,Negative R2 for Model A means predicting the mean is better.
+smr_snr_change,Model C: Persistence,R2 (LOOCV),0.1315498343585323,Valid but weak,
+smr_snr_change,Model D: Persistence + Controls,R2 (LOOCV),0.2319412752905764,Valid but weak,
+smr_snr_change,Model E: Combined,R2 (LOOCV),0.1007806308759111,Valid but weak,
+clean_smr_occupancy_change,Model A: Mean Power,R2 (LOOCV),-0.1891501988748001,Valid but weak,Negative R2 for Model A means predicting the mean is better.
+clean_smr_occupancy_change,Model B: Mean Power + Controls,R2 (LOOCV),-0.0061023217321896,Valid but weak,Negative R2 for Model A means predicting the mean is better.
+clean_smr_occupancy_change,Model C: Persistence,R2 (LOOCV),0.528914491509462,Valid but weak,
+clean_smr_occupancy_change,Model D: Persistence + Controls,R2 (LOOCV),0.6075366646882117,Valid but weak,
+clean_smr_occupancy_change,Model E: Combined,R2 (LOOCV),0.5717484373979789,Valid but weak,
+smr_acquisition,Model A: Mean Power,AUC (LOOCV),0.0,Failed/Leakage,
+smr_acquisition,Model B: Mean Power + Controls,AUC (LOOCV),0.0,Failed/Leakage,
+smr_acquisition,Model C: Persistence,AUC (LOOCV),0.0,Failed/Leakage,
+smr_acquisition,Model D: Persistence + Controls,AUC (LOOCV),0.0,Failed/Leakage,
+smr_acquisition,Model E: Combined,AUC (LOOCV),0.0,Failed/Leakage,
+beta_escape,Model A: Mean Power,AUC (LOOCV),0.0,Failed/Leakage,
+beta_escape,Model B: Mean Power + Controls,AUC (LOOCV),0.0,Failed/Leakage,
+beta_escape,Model C: Persistence,AUC (LOOCV),0.0,Failed/Leakage,
+beta_escape,Model D: Persistence + Controls,AUC (LOOCV),0.0,Failed/Leakage,
+beta_escape,Model E: Combined,AUC (LOOCV),0.0,Failed/Leakage,

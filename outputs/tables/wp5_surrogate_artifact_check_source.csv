@@ -1,0 +1,4 @@
+control,burst_rate_change,beta_power_change
+matched_power_baseline_scaled,-1.0,-0.6604437713664744
+original_feedback,-1.0,-0.6604437713664744
+phase_randomized_feedback,-1.0,-0.6708619037383917

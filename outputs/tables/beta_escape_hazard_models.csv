@@ -1,0 +1,2 @@
+model,metric,condition,threshold_def,n_subjects,mean_change,median_change,wilcoxon_p_value,sign_flip_p_value,direction
+paired_escape_rate_change,s1_escape_rate_per_s,task,p75,22,0.10329083172498223,-0.07274294713188034,1.0,0.495775211239438,increase_expected_for_escape

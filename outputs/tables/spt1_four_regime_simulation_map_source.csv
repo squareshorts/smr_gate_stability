@@ -1,0 +1,17 @@
+alpha_x,beta_y,dominant_regime
+0.001,0.1,C_stabilization_only
+0.001,0.5,C_stabilization_only
+0.001,2.0,C_stabilization_only
+0.001,5.0,C_stabilization_only
+0.01,0.1,C_stabilization_only
+0.01,0.5,C_stabilization_only
+0.01,2.0,C_stabilization_only
+0.01,5.0,C_stabilization_only
+0.05,0.1,B_acquisition_only
+0.05,0.5,B_acquisition_only
+0.05,2.0,B_acquisition_only
+0.05,5.0,B_acquisition_only
+0.1,0.1,B_acquisition_only
+0.1,0.5,B_acquisition_only
+0.1,2.0,B_acquisition_only
+0.1,5.0,B_acquisition_only

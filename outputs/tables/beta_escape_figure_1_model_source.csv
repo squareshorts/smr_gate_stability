@@ -1,0 +1,6 @@
+from_state,to_state,quantity
+S0,S1,entry/re-entry probability
+S1,S0,escape hazard
+S0,S2,broadband/artifact excursion
+S2,S0,artifact recovery
+S1,S2,beta plus broadband contamination

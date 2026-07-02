@@ -1,0 +1,10 @@
+data/
+*.log
+__pycache__/
+.ipynb_checkpoints/
+test_sklearn.py
+python_path.txt
+.vscode/
+.idea/
+outputs/tables/nf_sqi_window_features.csv
+outputs/tables/nf_sqi_task_labeled_windows.csv

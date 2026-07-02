@@ -1,0 +1,11 @@
+threshold,outcome,mean_or,mean_corr,mean_p,n_subjects
+viol_mad,admissible_next,0.0,,0.0004491427032166864,5
+viol_mad,smr_increase,0.0,,0.32343635104529106,5
+viol_p75,admissible_next,1.5133689839572193,,0.5994001722596408,5
+viol_p75,smr_increase,0.2544642857142857,,0.3132245228757521,5
+viol_p80,admissible_next,0.643956043956044,,0.6664967190180141,5
+viol_p80,smr_increase,0.2571428571428572,,0.32076295898528445,5
+viol_p90,admissible_next,0.0,,0.40006521094456654,5
+viol_p90,smr_increase,0.0,,0.2883645492589571,5
+viol_zscore,admissible_next,,,,5
+viol_zscore,smr_increase,,,,5

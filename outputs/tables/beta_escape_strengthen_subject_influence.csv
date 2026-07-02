@@ -1,0 +1,7 @@
+Model,Coefficient,Notes
+OLS Baseline,13.844369671682802,
+Huber Robust,9.189117165890615,Downweights outliers
+Bootstrap Mean,13.667619402155019,"95% CI: [-2.075, 28.775]"
+Low Noise Only,8.266602716182243,Excluded top 10% noisy subjects
+LOO Min,9.357242252497128,Excluding sub-012
+LOO Max,18.447042071071728,Excluding sub-011

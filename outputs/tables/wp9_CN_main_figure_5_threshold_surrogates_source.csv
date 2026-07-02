@@ -1,0 +1,9 @@
+threshold_method,burst_rate_change,burst_duration_change
+baseline_percentile_75,-1.0,-1.0
+baseline_percentile_80,-1.0,-1.0
+baseline_percentile_90,-1.0,-1.0
+baseline_percentile_95,-1.0,-1.0
+fixed_absolute_0p65,-1.0,-1.0
+mad_1p4826,-1.0,-1.0
+post_feedback_percentile_80,-0.45588235294117646,0.8658484785680649
+zscore_1p0,-1.0,-1.0

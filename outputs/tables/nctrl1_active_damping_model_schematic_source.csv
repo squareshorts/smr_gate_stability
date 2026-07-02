@@ -1,0 +1,5 @@
+component,description
+x,SMR target
+eta,HB noise
+z,Broadband
+controller,Active damper

@@ -1,0 +1,6 @@
+metric,mean_change,expected_direction
+mean high-beta power,-0.10422578635312095,decrease
+S1 dwell time,-0.0014797238528310814,decrease
+long-burst fraction,-0.012916180552061462,decrease
+escape rate,0.10329083172498223,increase
+re-entry probability,-0.00945437401678052,decrease

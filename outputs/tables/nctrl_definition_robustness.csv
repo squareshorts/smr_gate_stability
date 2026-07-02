@@ -1,0 +1,6 @@
+subject,quadrant_primary,quadrant_burst,quadrant_resid,quadrant_diff,n_unique_quadrants,modal_quadrant,agreement_fraction
+sub-004,D_neither,C_damp_only,D_neither,D_neither,2,D_neither,0.75
+sub-005,A_both,C_damp_only,B_acq_only,B_acq_only,3,B_acq_only,0.5
+sub-012,C_damp_only,C_damp_only,D_neither,C_damp_only,2,C_damp_only,0.75
+sub-013,B_acq_only,A_both,B_acq_only,B_acq_only,2,B_acq_only,0.75
+sub-018,D_neither,B_acq_only,C_damp_only,D_neither,3,D_neither,0.5

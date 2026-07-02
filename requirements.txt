@@ -1,0 +1,11 @@
+numpy>=1.23
+scipy>=1.9
+pandas>=1.5
+matplotlib>=3.6
+mne>=1.5
+scikit-learn>=1.2
+statsmodels>=0.14
+tqdm>=4.65
+requests>=2.31
+joblib>=1.3
+
