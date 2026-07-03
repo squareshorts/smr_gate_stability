@@ -1,9 +1,0 @@
-threshold_method,threshold_family,burst_rate_change,burst_rate_change_sd
-baseline_percentile_75,baseline_fixed,-1.0,0.0
-baseline_percentile_80,baseline_fixed,-1.0,0.0
-baseline_percentile_90,baseline_fixed,-1.0,0.0
-baseline_percentile_95,baseline_fixed,-1.0,0.0
-fixed_absolute_0p65,fixed_absolute,-1.0,0.0
-mad_1p4826,baseline_mad,-1.0,0.0
-post_feedback_percentile_80,post_feedback_negative_control,-0.45588235294117646,0.06901579371213959
-zscore_1p0,baseline_zscore,-1.0,0.0

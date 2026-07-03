@@ -5,4 +5,4 @@ SMR-only candidate reward windows are highly heterogeneous. By decomposing the w
 - High-Beta Only Contamination: 6.1%
 - Multi-Contaminated: 12.1%
 
-This empirically supports the claim that 'high-beta inhibition' primarily functions to excise a specific class of contaminated candidate windows, improving the precision of the reward signal.
+This supports reporting high-beta inhibition as one safeguard within NF-SQI while retaining broadband/noise-floor and other quality checks as the dominant contamination controls.

@@ -1,5 +1,0 @@
-condition,metric,value
-baseline,smr_power,0.2311631087354921
-baseline,beta_power,0.18419186849641825
-feedback,smr_power,0.231165203458633
-feedback,beta_power,0.04813666373545475

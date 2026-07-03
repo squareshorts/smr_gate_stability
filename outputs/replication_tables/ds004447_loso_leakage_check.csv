@@ -1,0 +1,89 @@
+dataset,model,test_subject,train_subject_count,test_subject_count,subject_overlap
+ds004447,Broadband/Noise Floor Only,sub-001,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-002,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-003,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-004,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-005,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-006,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-007,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-008,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-009,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-010,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-011,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-012,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-013,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-014,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-015,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-016,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-017,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-018,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-019,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-020,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-021,21,1,0
+ds004447,Broadband/Noise Floor Only,sub-022,21,1,0
+ds004447,High Beta Only,sub-001,21,1,0
+ds004447,High Beta Only,sub-002,21,1,0
+ds004447,High Beta Only,sub-003,21,1,0
+ds004447,High Beta Only,sub-004,21,1,0
+ds004447,High Beta Only,sub-005,21,1,0
+ds004447,High Beta Only,sub-006,21,1,0
+ds004447,High Beta Only,sub-007,21,1,0
+ds004447,High Beta Only,sub-008,21,1,0
+ds004447,High Beta Only,sub-009,21,1,0
+ds004447,High Beta Only,sub-010,21,1,0
+ds004447,High Beta Only,sub-011,21,1,0
+ds004447,High Beta Only,sub-012,21,1,0
+ds004447,High Beta Only,sub-013,21,1,0
+ds004447,High Beta Only,sub-014,21,1,0
+ds004447,High Beta Only,sub-015,21,1,0
+ds004447,High Beta Only,sub-016,21,1,0
+ds004447,High Beta Only,sub-017,21,1,0
+ds004447,High Beta Only,sub-018,21,1,0
+ds004447,High Beta Only,sub-019,21,1,0
+ds004447,High Beta Only,sub-020,21,1,0
+ds004447,High Beta Only,sub-021,21,1,0
+ds004447,High Beta Only,sub-022,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-001,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-002,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-003,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-004,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-005,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-006,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-007,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-008,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-009,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-010,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-011,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-012,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-013,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-014,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-015,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-016,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-017,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-018,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-019,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-020,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-021,21,1,0
+ds004447,Broadband/Noise Floor + High Beta,sub-022,21,1,0
+ds004447,Full NF-SQI,sub-001,21,1,0
+ds004447,Full NF-SQI,sub-002,21,1,0
+ds004447,Full NF-SQI,sub-003,21,1,0
+ds004447,Full NF-SQI,sub-004,21,1,0
+ds004447,Full NF-SQI,sub-005,21,1,0
+ds004447,Full NF-SQI,sub-006,21,1,0
+ds004447,Full NF-SQI,sub-007,21,1,0
+ds004447,Full NF-SQI,sub-008,21,1,0
+ds004447,Full NF-SQI,sub-009,21,1,0
+ds004447,Full NF-SQI,sub-010,21,1,0
+ds004447,Full NF-SQI,sub-011,21,1,0
+ds004447,Full NF-SQI,sub-012,21,1,0
+ds004447,Full NF-SQI,sub-013,21,1,0
+ds004447,Full NF-SQI,sub-014,21,1,0
+ds004447,Full NF-SQI,sub-015,21,1,0
+ds004447,Full NF-SQI,sub-016,21,1,0
+ds004447,Full NF-SQI,sub-017,21,1,0
+ds004447,Full NF-SQI,sub-018,21,1,0
+ds004447,Full NF-SQI,sub-019,21,1,0
+ds004447,Full NF-SQI,sub-020,21,1,0
+ds004447,Full NF-SQI,sub-021,21,1,0
+ds004447,Full NF-SQI,sub-022,21,1,0

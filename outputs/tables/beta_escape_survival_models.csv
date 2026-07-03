@@ -1,9 +1,0 @@
-model,condition,threshold_def,n_episodes,log_hazard_ratio_late_vs_early,hazard_ratio_late_vs_early,p_value,status,interpretation_note,metric,n_subjects,mean_change,median_change,wilcoxon_p_value,sign_flip_p_value,direction
-cox_ph_episode_level_late_vs_early,task,p75,2833.0,0.008760863212781916,1.0087993518908065,0.8157400058974353,fit_success,hazard_ratio_above_1_indicates_faster_escape_in_late_sessions,,,,,,,
-subject_level_paired_change,task,p75,,,,,,,high_beta_power,22.0,-0.10422578635312095,-0.028503457555985545,0.3369474411010742,0.14754262286885655,decrease_expected_if_mean_power_suppression
-subject_level_paired_change,task,p75,,,,,,,mean_s1_dwell_time_s,22.0,-0.0014797238528310814,0.0010687660564041301,0.9746217727661133,0.5219739013049347,decrease_expected_for_escape
-subject_level_paired_change,task,p75,,,,,,,p90_s1_dwell_time_s,22.0,-0.008181818181818186,0.0,0.27232046250000574,0.2856357182140893,decrease_expected_for_tail_escape
-subject_level_paired_change,task,p75,,,,,,,long_high_beta_burst_fraction,22.0,-0.012916180552061462,-0.006676846483315194,0.5235109329223633,0.3566821658917054,decrease_expected_for_tail_escape
-subject_level_paired_change,task,p75,,,,,,,s1_escape_rate_per_s,22.0,0.10329083172498223,-0.07274294713188034,1.0,0.495775211239438,increase_expected_for_escape
-subject_level_paired_change,task,p75,,,,,,,s1_reentry_probability,22.0,-0.00945437401678052,-0.0031587348058782494,0.3369474411010742,0.20183990800459978,decrease_expected_for_escape
-subject_level_paired_change,task,p75,,,,,,,beta_state_occupancy,22.0,-0.012004985565768733,-0.00987166374439899,0.4825911521911621,0.2709364531773411,decrease_expected_for_escape

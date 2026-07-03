@@ -1,0 +1,11 @@
+subject,session,total_candidates,clean,high_beta_excl,broadband_noise_excl,channel_inc_excl,transient_excl,multi_contam,contaminated,blocked_by_hb_single,blocked_by_bbnf_single,blocked_by_tr_single,blocked_by_ch_single,blocked_by_full
+sub-004,ses-01,62,23,4,9,5,0,21,39,14,29,6,19,39
+sub-004,ses-08,34,14,0,5,4,0,11,20,4,15,4,14,20
+sub-005,ses-01,54,11,4,9,7,0,23,43,21,32,9,15,43
+sub-005,ses-08,45,32,1,5,2,0,5,13,3,10,0,6,13
+sub-012,ses-01,48,25,2,5,4,0,12,23,11,17,0,9,23
+sub-012,ses-08,38,19,2,7,2,0,8,19,8,14,0,8,19
+sub-013,ses-01,49,23,7,5,4,0,10,26,15,8,0,14,26
+sub-013,ses-08,28,16,3,3,3,0,3,12,6,4,0,6,12
+sub-018,ses-01,29,17,3,4,3,0,2,12,5,5,0,4,12
+sub-018,ses-08,57,30,2,9,7,0,9,27,9,16,0,14,27

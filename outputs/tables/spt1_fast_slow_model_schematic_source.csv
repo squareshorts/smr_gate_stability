@@ -1,4 +1,0 @@
-component,description,timescale
-slow_variable,x(t): SMR regulation / learning state,slow (1/alpha_x)
-fast_variable,y(t): high-beta envelope / interference state,fast (epsilon/beta_y)
-controller,SMR reward + beta inhibit barrier h(y)>=0,instantaneous

@@ -1,6 +1,0 @@
-subject,smr_frac_change,hbeta_frac_change,broadband_frac_change,quadrant,artifact_aware_class,data_source
-sub-004,0.0968881193014847,0.4064894509940624,0.4713545574935096,B_acquisition_only,broadband_contamination,wp8_effects
-sub-005,-0.4335194678840626,-0.2615792175469703,-0.4162398534565992,C_stabilization_only,unstable_no_regulation,wp8_effects
-sub-012,-0.2594629403017838,-0.4668156509361809,-0.1208652152453001,C_stabilization_only,unstable_no_regulation,wp8_effects
-sub-013,0.4375148524282156,0.5394287241001753,1.0764176483973005,B_acquisition_only,broadband_contamination,wp8_effects
-sub-018,-0.1193879185986193,-0.1196418924672178,0.3476106923785877,C_stabilization_only,broadband_contamination,wp8_effects
