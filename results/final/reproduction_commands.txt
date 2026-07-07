@@ -1,0 +1,3 @@
+conda env create -f environment.yml
+conda activate smr-cn-revision
+python results/submission_readiness/run_snr_harmonization.py
