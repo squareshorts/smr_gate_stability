@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Souza"
+    given-names: "Suzana Cescon de"
+  - family-names: "Pereira Jr"
+    given-names: "Antonio"
+title: "Signal-Quality Admissibility for Sensorimotor Rhythm Neurofeedback: Beyond High-Beta Inhibition"
+version: 1.0.0
+date-released: 2026-07-07
+url: "https://github.com/suzana-cescon/smr-nf-sqi-reproducibility"

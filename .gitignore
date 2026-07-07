@@ -1,27 +1,60 @@
-data/*
-!data/manifests/
-data/manifests/*
-!data/manifests/openneuro_ds004444_1.0.1_file_index.csv
-!data/manifests/openneuro_ds004444_1.0.1_file_index.json
-!data/manifests/openneuro_ds004446_1.0.1_file_index.csv
-!data/manifests/openneuro_ds004446_1.0.1_file_index.json
-!data/manifests/openneuro_ds004447_1.0.1_file_index.csv
-!data/manifests/openneuro_ds004447_1.0.1_file_index.json
-!data/manifests/openneuro_ds004448_1.0.2_file_index.csv
-!data/manifests/openneuro_ds004448_1.0.2_file_index.json
-*.log
-*.py[cod]
+# Repositories/Packages
 __pycache__/
+*.py[cod]
+.pytest_cache/
 .ipynb_checkpoints/
-test_sklearn.py
-python_path.txt
-.vscode/
-.idea/
-.env/
 .venv/
 venv/
-outputs/tables/nf_sqi_window_features.csv
-outputs/tables/nf_sqi_task_labeled_windows.csv
-outputs/replication_tables/*_window_features.csv
-outputs/replication_tables/*_task_labeled_windows.csv
-outputs/replication_reports/
+env/
+.env/
+
+# Raw Data and Cache
+data/
+raw/
+derivatives/
+manifests/
+*.edf
+*.nwb
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# LaTeX / Manuscript build files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.pdf
+manuscript/*.pdf
+
+# Quarantine / Pending delete
+archive/
+archive/stale_pending_delete/
+
+# Temporary files and logs
+*.log
+debug_output.txt
+last_user_content.txt
+last_user_input.json
+py_crash.log
+python_path.txt
+run_output.txt
+stderr.log
+stdout.log
+outputs/
+
+# Ignore old submission files
+cover_letter.*
+response_letters/
+submission_forms/
+private_notes/
