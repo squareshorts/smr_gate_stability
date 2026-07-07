@@ -1,0 +1,29 @@
+# Repository Cleanup Report
+
+- **Branch Name**: cleanup/submission-ready-repo
+- **Starting Commit Hash**: c0a17e8f6c6535b03a86532ccab77239dfc498df
+- **Final Commit Hash**: (See GitHub / git log for the commit hash incorporating this report)
+- **Pushed Branch**: cleanup/submission-ready-repo
+- **Final Manuscript Path**: manuscript/main.tex
+- **Final Compiled PDF Path**: Compilation failed (LaTeX tools missing)
+- **Final Figures Included**: 
+  - manuscript/figures/fig_gate_blocking_clean.pdf (png, tiff)
+  - manuscript/figures/fig_model_comparison_clean.pdf (png, tiff)
+  - manuscript/figures/fig6_cross_dataset_clean.pdf (png, tiff)
+  - manuscript/figures/nf_sqi_example_windows_psd.pdf
+  - manuscript/figures/nf_sqi_contamination_overlap_pie.pdf
+  - manuscript/figures/nf_sqi_reward_window_decomposition.pdf
+- **Final Result CSVs Included**: 
+  - results/final/snr_primary_replication_table.csv
+  - results/final/power_sensitivity_replication_table.csv
+  - results/final/table6A_gate_blocking.csv
+  - results/final/table6B_auc_comparison.csv
+  - results/final/loso_model_comparison_all_variants.csv
+  - results/final/bootstrap_ci_all_variants.csv
+- **Files Quarantined but Not Committed**: 
+  - All items in `archive/stale_pending_delete/` (outputs/, R_libs/, temporary scripts, cache folders).
+- **Tests Passed/Failed**: Failed (Missing Python/R command line tools). Documented in `results/final/*_out.txt`.
+- **Manuscript Compile Result**: Failed (Missing pdflatex/bibtex).
+- **Remaining Blockers**: 
+  - Missing GitHub release or Zenodo DOI
+  - LaTeX compilation of `main.tex` and insertion of the true final manuscript text
