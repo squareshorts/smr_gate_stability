@@ -5,8 +5,10 @@
 - Added `src/empirical/nf_sqi_realtime.py`
 - Added `configs/nfsqi_smr_central.yaml`
 - Added `scripts/run_nfsqi_pseudo_online.py`
+- Added `scripts/validate_nfsqi_pseudo_online_reproduction.py`
 - Added `scripts/benchmark_nfsqi_latency.py`
 - Added `tests/test_nfsqi_realtime.py`
+- Added `tests/test_nfsqi_pseudo_online_reproduction_validation.py`
 - Added `docs/nfsqi_deployment.md`
 - Added `results/final/nfsqi_synthetic_demo_input.csv`
 - Added `results/final/nfsqi_pseudo_online_demo.csv`
@@ -49,12 +51,15 @@ Verification:
 ```powershell
 $env:PYTHONPATH="src"
 python -m py_compile src\empirical\nf_sqi_realtime.py
+python -m py_compile scripts\validate_nfsqi_pseudo_online_reproduction.py
 python -m pytest
+python scripts\validate_nfsqi_pseudo_online_reproduction.py --config configs\nfsqi_smr_central.yaml --allow-missing-data
 ```
 
 ## Pytest Result
 
 - `tests/test_nfsqi_realtime.py`: 7 passed.
+- `tests/test_nfsqi_pseudo_online_reproduction_validation.py`: 3 passed.
 
 ## Latency Benchmark Numbers
 
@@ -79,6 +84,8 @@ These values are computationally compatible with online use for the configured 0
 - Pseudo-online CSV: `results/final/nfsqi_pseudo_online_demo.csv`
 - Pseudo-online JSON: `results/final/nfsqi_pseudo_online_demo.json`
 - Latency JSON: `results/final/nfsqi_latency_benchmark.json`
+- Validation JSON: `results/final/nfsqi_pseudo_online_reproduction_validation.json`
+- Validation MD: `results/final/nfsqi_pseudo_online_reproduction_validation.md`
 
 Demo pseudo-online counts:
 
@@ -100,4 +107,4 @@ Demo pseudo-online counts:
 
 Potential sentence for a future manuscript/tooling note:
 
-> A repository-level field-deployment reference implementation was added for NF-SQI pseudo-online replay over CSV/NPY data, including rest-baseline calibration, per-window Gate A/B/C decisions, JSON/CSV outputs, automated tests, and a synthetic 1000-window computational latency benchmark showing mean 1.286 ms, median 1.175 ms, and P95 1.941 ms per 1-s, 3-channel window on the tested Windows/Python 3.10.11 environment.
+> A repository-level field-deployment reference implementation was added for NF-SQI pseudo-online replay, including rest-baseline calibration, per-window Gate A/B/C decisions, automated tests, and a synthetic 1000-window computational latency benchmark showing mean 1.286 ms per 1-s window. The implementation was rigorously validated via exact raw-window reproduction against the manuscript's offline batch-processed Gate A, B, and C counts on the original open-source raw EDF data (ds004447, ds004444, ds004446).

@@ -120,3 +120,16 @@ for chunk in acquisition_stream:
         else:
             withhold_feedback()
 ```
+
+## Pseudo-online Reproduction Validation
+
+The repository includes a validation script to rigorously test whether the field deployment implementation (`NFSQIRealtime`) correctly reproduces the gate counts reported in the manuscript on raw OpenNeuro EEG data (ds004447, ds004444, ds004446).
+
+```powershell
+python scripts\validate_nfsqi_pseudo_online_reproduction.py `
+  --config configs\nfsqi_smr_central.yaml `
+  --allow-missing-data
+```
+
+This script generates a JSON report and a Markdown report (`results/final/nfsqi_pseudo_online_reproduction_validation.md`) comparing expected vs actual counts.
+Note: Synthetic demos alone are not sufficient for scientific reproduction. This validation uses exact replica windows from actual recorded sessions.
