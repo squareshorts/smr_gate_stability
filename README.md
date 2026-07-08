@@ -23,5 +23,8 @@ This analysis was performed on publicly available OpenNeuro datasets:
 ## Reproducibility
 For exact commands to regenerate window-level features, virtual gate outputs, denominator accounting, and final figures, see `docs/reproducibility.md`.
 
+## Field-deployment reference implementation
+The repository also includes a pseudo-online NF-SQI reference path for other labs to inspect and test: `src/empirical/nf_sqi_realtime.py`, `configs/nfsqi_smr_central.yaml`, `scripts/run_nfsqi_pseudo_online.py`, `scripts/benchmark_nfsqi_latency.py`, and `docs/nfsqi_deployment.md`.
+
 ## Expected Final Outputs
 Running the harmonization scripts generates cross-dataset tables demonstrating that the full NF-SQI rule strictly blocks 100.0% of rule-defined contaminated candidates, outperforming standard high-beta inhibition in LOSO AUC metrics across all analyzed datasets.

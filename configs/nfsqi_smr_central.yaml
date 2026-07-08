@@ -1,0 +1,26 @@
+window_sec: 1.0
+overlap: 0.5
+target_metric: smr_snr
+
+bands:
+  smr: [12, 15]
+  high_beta: [20, 30]
+  broadband: [4, 45]
+  noise_floor: [35, 45]
+
+thresholds:
+  baseline: rest
+  smr_percentile: 75
+  quality_percentile: 75
+  transient_percentile: 90
+
+features:
+  use_high_beta: true
+  use_broadband: true
+  use_noise_floor: true
+  use_transient: true
+  use_channel_consistency: true
+
+outputs:
+  include_features: true
+  include_rejection_flags: true

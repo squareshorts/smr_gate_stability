@@ -1,0 +1,15 @@
+{
+  "description": "NF-SQI computational latency benchmark.",
+  "mean_ms": 1.2863407010445371,
+  "median_ms": 1.1752499849535525,
+  "p95_ms": 1.940529988496564,
+  "max_ms": 3.3163000480271876,
+  "n_windows": 1000,
+  "fs": 1000,
+  "window_sec": 1.0,
+  "channels": 3,
+  "gate_c_accepted_count": 66,
+  "python_version": "3.10.11",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel"
+}
