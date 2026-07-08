@@ -132,6 +132,30 @@ def process_feature_level(dataset_name: str, config: dict, features_csv: Path) -
         'full_nfsqi_blocks': full_nfsqi_blocks
     }
 
+def process_batch_summary(dataset_name: str, batch_dir: Path) -> dict:
+    csv_path = batch_dir / f"{dataset_name}_snr_primary_contamination_overlap.csv"
+    if not csv_path.exists():
+        raise FileNotFoundError(f"Missing batch summary CSV {csv_path}")
+    df = pd.read_csv(csv_path)
+    gate_a = int(df['total_candidates'].sum())
+    clean = int(df['clean'].sum())
+    quality_flagged = int(df['contaminated'].sum())
+    high_beta_blocks = int(df['blocked_by_hb_single'].sum())
+    full_blocks = int(df['blocked_by_full'].sum())
+    gate_b = gate_a - high_beta_blocks
+    gate_c = clean
+    
+    return {
+        'task_windows': EXPECTED_TASK_WINDOWS.get(dataset_name, 0),
+        'gate_a_accepted': gate_a,
+        'clean_gate_a': clean,
+        'quality_flagged_gate_a': quality_flagged,
+        'gate_b_accepted': gate_b,
+        'gate_c_accepted': gate_c,
+        'high_beta_blocks': high_beta_blocks,
+        'full_nfsqi_blocks': full_blocks
+    }
+
 def process_raw_window(dataset_name: str, config: dict, data_root: Path):
     if not mne:
         raise ImportError("Raw-window replay requires mne")
@@ -234,7 +258,7 @@ def process_raw_window(dataset_name: str, config: dict, data_root: Path):
 def main():
     parser = argparse.ArgumentParser(description="Validate pseudo-online reproduction.")
     parser.add_argument("--config", required=True)
-    parser.add_argument("--mode", choices=['feature-level', 'raw-window'], default='feature-level')
+    parser.add_argument("--mode", choices=['feature-level', 'batch-summary', 'raw-window'], default='feature-level')
     parser.add_argument("--datasets", default="ds004447,ds004444,ds004446")
     parser.add_argument("--out-json", default="results/final/nfsqi_pseudo_online_reproduction_validation.json")
     parser.add_argument("--out-md", default="results/final/nfsqi_pseudo_online_reproduction_validation.md")
@@ -280,6 +304,8 @@ def main():
                 if not feat_csv:
                     raise FileNotFoundError(f"Missing feature CSV for {ds}")
                 actual = process_feature_level(ds, config, feat_csv)
+            elif args.mode == 'batch-summary':
+                actual = process_batch_summary(ds, batch_dir)
             else:
                 actual = process_raw_window(ds, config, data_root)
                 
