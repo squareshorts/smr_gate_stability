@@ -1,0 +1,74 @@
+{
+  "description": "NF-SQI pseudo-online replay field-deployment reference implementation.",
+  "config_used": {
+    "window_sec": 1.0,
+    "overlap": 0.5,
+    "target_metric": "smr_snr",
+    "thresholds": {
+      "baseline": "rest",
+      "smr_percentile": 75,
+      "quality_percentile": 75,
+      "transient_percentile": 90
+    },
+    "outputs": {
+      "include_features": true,
+      "include_rejection_flags": true
+    },
+    "bands": {
+      "smr": [
+        12,
+        15
+      ],
+      "high_beta": [
+        20,
+        30
+      ],
+      "broadband": [
+        4,
+        45
+      ],
+      "noise_floor": [
+        35,
+        45
+      ]
+    },
+    "features": {
+      "use_high_beta": true,
+      "use_broadband": true,
+      "use_noise_floor": true,
+      "use_transient": true,
+      "use_channel_consistency": true
+    }
+  },
+  "thresholds": {
+    "smr_snr_min": 0.00043119388458358777,
+    "high_beta_max": 3.1701354822453e-14,
+    "broadband_max": 6.748541407486963e-15,
+    "noise_floor_max": 2.0133568125591585e-15,
+    "transient_max": 2.739178275998413e-06,
+    "channel_inconsistency_max": 0.9347243565557419,
+    "nonstationarity_max": null
+  },
+  "number_of_windows": 13,
+  "gate_a_accepted_count": 3,
+  "gate_b_accepted_count": 2,
+  "gate_c_accepted_count": 0,
+  "rejection_counts_by_flag": {
+    "broadband": 3,
+    "channel_inconsistency": 9,
+    "high_beta": 5,
+    "low_smr_snr": 10,
+    "noise_floor": 4,
+    "transient": 6
+  },
+  "input_file_path": "results\\final\\nfsqi_synthetic_demo_input.csv",
+  "sampling_rate": 1000.0,
+  "channel_list": [
+    "E36",
+    "E104",
+    "E128"
+  ],
+  "window_sec": 1.0,
+  "step_sec": 0.5,
+  "task_start_sample": 5000
+}

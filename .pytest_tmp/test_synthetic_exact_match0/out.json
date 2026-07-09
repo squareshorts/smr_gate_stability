@@ -1,0 +1,45 @@
+{
+  "datasets": {
+    "ds004447": {
+      "mode": "feature-level",
+      "status": "PASS",
+      "reason": "",
+      "expected": {
+        "task_windows": 100,
+        "gate_a_accepted": 50,
+        "clean_gate_a": 30,
+        "quality_flagged_gate_a": 20,
+        "gate_b_accepted": 40,
+        "gate_c_accepted": 30,
+        "high_beta_blocks": 10,
+        "full_nfsqi_blocks": 20
+      },
+      "actual": {
+        "task_windows": 100,
+        "gate_a_accepted": 50,
+        "clean_gate_a": 30,
+        "quality_flagged_gate_a": 20,
+        "gate_b_accepted": 40,
+        "gate_c_accepted": 30,
+        "high_beta_blocks": 10,
+        "full_nfsqi_blocks": 20
+      },
+      "deltas": {
+        "task_windows": 0,
+        "gate_a_accepted": 0,
+        "clean_gate_a": 0,
+        "quality_flagged_gate_a": 0,
+        "gate_b_accepted": 0,
+        "gate_c_accepted": 0,
+        "high_beta_blocks": 0,
+        "full_nfsqi_blocks": 0
+      },
+      "identities": {
+        "gate_a_accepted == clean + quality_flagged": true,
+        "gate_c_accepted == clean_gate_a": true,
+        "full_nfsqi_blocks == gate_a - gate_c": true,
+        "high_beta_blocks == gate_a - gate_b": true
+      }
+    }
+  }
+}

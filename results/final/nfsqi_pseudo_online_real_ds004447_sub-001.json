@@ -1,0 +1,99 @@
+{
+  "pooled": {
+    "dataset": "ds004447",
+    "n_sessions_used": 2,
+    "n_subjects": 1,
+    "total_task_windows": 238,
+    "gate_a": 33,
+    "gate_b": 31,
+    "gate_c": 15,
+    "gate_a_yield_pct": 13.865546218487395,
+    "gate_b_yield_pct": 13.025210084033613,
+    "gate_c_yield_pct": 6.302521008403361,
+    "gate_c_windows_per_min": 7.563025210084033,
+    "hb_blocks_of_gate_a_pct": 6.0606060606060606,
+    "latency_ms_mean_of_session_means": 1.1028052736597918,
+    "latency_ms_p95_max_over_sessions": 1.7831030498541618,
+    "pooled_rejection_counts": {
+      "low_smr_snr": 205,
+      "noise_floor": 22,
+      "channel_inconsistency": 47,
+      "high_beta": 23,
+      "broadband": 53
+    }
+  },
+  "sessions": [
+    {
+      "fs": 1000.0,
+      "skipped": false,
+      "n_rest": 210,
+      "n_task": 118,
+      "gate_a": 19,
+      "gate_b": 18,
+      "gate_c": 8,
+      "gate_a_yield": 0.16101694915254236,
+      "gate_b_yield": 0.15254237288135594,
+      "gate_c_yield": 0.06779661016949153,
+      "gate_c_windows_per_min": 8.135593220338983,
+      "rejection_counts": {
+        "low_smr_snr": 99,
+        "noise_floor": 11,
+        "channel_inconsistency": 32,
+        "high_beta": 7,
+        "broadband": 17
+      },
+      "latency_ms_mean": 1.110610338988578,
+      "latency_ms_median": 1.0510329998396628,
+      "latency_ms_p95": 1.4451365498416635,
+      "latency_ms_max": 2.4299439999140304,
+      "limits": {
+        "smr_snr_min": 0.0019724900759973867,
+        "high_beta_max": 1.961028452137264e-12,
+        "broadband_max": 2.8231521353800242e-11,
+        "noise_floor_max": 7.307050730606033e-13,
+        "transient_max": 0.00011260414650186983,
+        "channel_inconsistency_max": 0.0029117074522630407,
+        "nonstationarity_max": null
+      },
+      "dataset": "ds004447",
+      "subject": "sub-001",
+      "session": "ses-01"
+    },
+    {
+      "fs": 1000.0,
+      "skipped": false,
+      "n_rest": 214,
+      "n_task": 120,
+      "gate_a": 14,
+      "gate_b": 13,
+      "gate_c": 7,
+      "gate_a_yield": 0.11666666666666667,
+      "gate_b_yield": 0.10833333333333334,
+      "gate_c_yield": 0.058333333333333334,
+      "gate_c_windows_per_min": 7.0,
+      "rejection_counts": {
+        "low_smr_snr": 106,
+        "broadband": 36,
+        "high_beta": 16,
+        "noise_floor": 11,
+        "channel_inconsistency": 15
+      },
+      "latency_ms_mean": 1.0950002083310058,
+      "latency_ms_median": 1.0038780000058978,
+      "latency_ms_p95": 1.7831030498541618,
+      "latency_ms_max": 2.208175999840023,
+      "limits": {
+        "smr_snr_min": 0.0003780154671301238,
+        "high_beta_max": 4.145687067091214e-13,
+        "broadband_max": 6.2830059666899295e-12,
+        "noise_floor_max": 1.9937796425801173e-13,
+        "transient_max": 3.924762645914452e-05,
+        "channel_inconsistency_max": 6.932804420772311e-06,
+        "nonstationarity_max": null
+      },
+      "dataset": "ds004447",
+      "subject": "sub-001",
+      "session": "ses-19"
+    }
+  ]
+}

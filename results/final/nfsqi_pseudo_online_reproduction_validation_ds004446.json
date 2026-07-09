@@ -1,0 +1,39 @@
+{
+  "datasets": {
+    "ds004446": {
+      "mode": "raw-window replay",
+      "status": "FAIL",
+      "reason": "Max delta 2800 exceeds tolerance 0",
+      "expected": {
+        "task_windows": 2800,
+        "gate_a_accepted": 451,
+        "clean_gate_a": 215,
+        "quality_flagged_gate_a": 236,
+        "gate_b_accepted": 355,
+        "gate_c_accepted": 215,
+        "high_beta_blocks": 96,
+        "full_nfsqi_blocks": 236
+      },
+      "actual": {
+        "task_windows": 0,
+        "gate_a_accepted": 0,
+        "gate_b_accepted": 0,
+        "gate_c_accepted": 0,
+        "clean_gate_a": 0,
+        "quality_flagged_gate_a": 0,
+        "high_beta_blocks": 0,
+        "full_nfsqi_blocks": 0
+      },
+      "deltas": {
+        "task_windows": 2800,
+        "gate_a_accepted": 451,
+        "clean_gate_a": 215,
+        "quality_flagged_gate_a": 236,
+        "gate_b_accepted": 355,
+        "gate_c_accepted": 215,
+        "high_beta_blocks": 96,
+        "full_nfsqi_blocks": 236
+      }
+    }
+  }
+}
