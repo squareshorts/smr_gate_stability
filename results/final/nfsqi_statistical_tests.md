@@ -1,0 +1,20 @@
+| Dataset   | Comparison                 |   Δ Estimate |    CI Lower |     CI Upper |   p-value | Direction   |
+|:----------|:---------------------------|-------------:|------------:|-------------:|----------:|:------------|
+| ds004447  | ΔBlocking BB/NF minus HB   |  17.4523     | 12.7659     | 22.2912      |    0      | positive    |
+| ds004447  | ΔBlocking Full minus HB    |  33.8751     | 29.633      | 38.2744      |    0      | positive    |
+| ds004447  | ΔBlocking Full minus BB/NF |  16.4228     | 13.9609     | 18.7433      |    0      | positive    |
+| ds004447  | ΔAUC BB/NF minus HB        |   0.191181   |  0.129268   |  0.256104    |    0      | positive    |
+| ds004447  | ΔAUC Full minus HB         |   0.189438   |  0.112905   |  0.264806    |    0      | positive    |
+| ds004447  | ΔAUC BB/NF+HB minus BB/NF  |  -0.0106401  | -0.0338291  |  0.00260823  |    0.3584 | negative    |
+| ds004444  | ΔBlocking BB/NF minus HB   |  13.6592     |  9.45728    | 17.5704      |    0      | positive    |
+| ds004444  | ΔBlocking Full minus HB    |  35.6936     | 32.4398     | 38.6176      |    0      | positive    |
+| ds004444  | ΔBlocking Full minus BB/NF |  22.0344     | 19.6335     | 24.898       |    0      | positive    |
+| ds004444  | ΔAUC BB/NF minus HB        |   0.0998758  |  0.0413808  |  0.154151    |    0.0004 | positive    |
+| ds004444  | ΔAUC Full minus HB         |   0.143112   |  0.0874221  |  0.201174    |    0      | positive    |
+| ds004444  | ΔAUC BB/NF+HB minus BB/NF  |  -0.00304825 | -0.00666084 | -0.000271733 |    0.0156 | negative    |
+| ds004446  | ΔBlocking BB/NF minus HB   |  12.0292     |  0          | 21.9713      |    0.0608 | positive    |
+| ds004446  | ΔBlocking Full minus HB    |  30.9245     | 25.0602     | 37.3717      |    0      | positive    |
+| ds004446  | ΔBlocking Full minus BB/NF |  18.8953     | 14.135      | 26.3158      |    0      | positive    |
+| ds004446  | ΔAUC BB/NF minus HB        |   0.165092   |  0.10837    |  0.195053    |    0.0012 | positive    |
+| ds004446  | ΔAUC Full minus HB         |   0.209016   |  0.175082   |  0.257101    |    0      | positive    |
+| ds004446  | ΔAUC BB/NF+HB minus BB/NF  |  -0.0016252  | -0.00626014 |  0.00253189  |    0.4508 | negative    |
