@@ -59,10 +59,10 @@ def find_feature_csv(dataset: str) -> Path | None:
     candidates = []
     if dataset == 'ds004447':
         candidates.append(Path('outputs/tables/nf_sqi_window_features.csv'))
-        candidates.append(Path('archive/stale_pending_delete/outputs/tables/nf_sqi_window_features.csv'))
+        candidates.append(Path('outputs/tables/nf_sqi_window_features.csv'))
     else:
+        # Check standard location for others
         candidates.append(Path(f'outputs/replication_tables/{dataset}_window_features.csv'))
-        candidates.append(Path(f'archive/stale_pending_delete/outputs/replication_tables/{dataset}_window_features.csv'))
         
     for path in candidates:
         full_path = ROOT / path
@@ -263,8 +263,8 @@ def main():
     parser.add_argument("--out-json", default="results/final/nfsqi_pseudo_online_reproduction_validation.json")
     parser.add_argument("--out-md", default="results/final/nfsqi_pseudo_online_reproduction_validation.md")
     parser.add_argument("--tolerance", type=int, default=0)
-    parser.add_argument("--data-root", default="archive/stale_pending_delete/data/data/raw/openneuro")
-    parser.add_argument("--batch-results-root", default="archive/stale_pending_delete/results_submission_readiness")
+    parser.add_argument("--data-root", default="data/raw/openneuro")
+    parser.add_argument("--batch-results-root", default="results/final")
     parser.add_argument("--allow-missing-data", action="store_true")
     
     args = parser.parse_args()

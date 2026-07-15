@@ -62,7 +62,7 @@ HOP_MIN = STEP_S / 60.0  # minutes advanced per accepted window slot
 
 
 def dataset_dir(dataset: str) -> Path:
-    return ROOT / "archive/stale_pending_delete/data/data/raw/openneuro" / dataset
+    return ROOT / "data/raw/openneuro" / dataset
 
 
 def segment_windows(data: np.ndarray, event_arr: np.ndarray, fs: float):

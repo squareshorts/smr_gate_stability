@@ -1,46 +1,41 @@
 # Reproducibility Guide
 
 ## Prerequisites
-Ensure `uv` is installed, as it provides the most reproducible execution environment for this repository. 
+Ensure `uv` is installed, as it provides the most reproducible execution environment for this repository.
+If you wish to regenerate the manuscript figures, you must also have `R` installed with the `ggplot2`, `dplyr`, and `tidyr` packages.
 
-## 1. Window-Level NF-SQI Features
-To extract the window-level EEG features from raw OpenNeuro EDF files for the primary and companion datasets (requires OpenNeuro data in `data/raw/openneuro/`):
+## 1. Quick Reproduction for Reviewers (Figures & Tables)
+The repository contains the final derived data required to regenerate manuscript figures without downloading the raw terabyte-scale EDF files. The intermediate statistics and regression results are bundled in `results/final/`.
 
-```bash
-uv run python src/analysis_replication/run_full_replication.py
-```
-*(This generates the large intermediate feature CSVs which are not tracked by Git.)*
-
-## 2. Virtual Gate Outputs, LOSO AUC Tables, and Cross-Dataset Blocking
-To synthesize the extracted window features into the cross-dataset harmonization tables, virtual gate outputs, and the logistic regression leave-one-subject-out (LOSO) predictive models:
-
-```bash
-uv run python scripts/run_snr_harmonization.py
-```
-*(This populates `results/submission_readiness/` with the final model comparison tables and summary stats).*
-
-## 3. Denominator Accounting
-To recompute the exact conservative denominator counts for manuscript tables (matching the count-weighted yields):
-
-```bash
-uv run python scripts/recompute_counts.py
-```
-
-## 4. Final Figures
-To regenerate the publication-quality manuscript figures (PDF, PNG, TIFF) using R's ggplot2:
-
+To regenerate the publication-quality manuscript figures (PDF, PNG, TIFF):
 ```bash
 Rscript scripts/make_submission_figures_r.R
 ```
 
+To run the lightweight synthetic computational latency benchmark:
+```bash
+python scripts/benchmark_nfsqi_latency.py --config configs/nfsqi_smr_central.yaml --n-windows 1000
+```
+
+## 2. Full Reproduction from Raw EDFs
+If you intend to reproduce the full window-level feature extraction or the real-time EDF streaming benchmark, you must first download the raw EEG datasets from OpenNeuro (`ds004447`, `ds004444`, `ds004446`) into the `data/raw/openneuro/` directory.
+
+See `docs/data_availability.md` for DOIs and dataset access instructions.
+
+Once the raw data is present at `data/raw/openneuro/<dataset_id>`, you can re-run the pseudo-online raw EDF deployment path:
+```bash
+python scripts/run_nfsqi_pseudo_online_real_edf.py
+```
+*(This extracts features window-by-window directly from the source EDF files.)*
+
 ## Reviewing the Output
-After running the scripts above, the `results/final/` folder will be populated with:
-- `snr_primary_replication_table.csv`
+The `results/final/` folder contains all pre-computed outputs used in the manuscript, including:
+- `bootstrap_ci_all_variants.csv`
 - `loso_model_comparison_all_variants.csv`
 - `table6A_gate_blocking.csv`
 - `table6B_auc_comparison.csv`
 
-The `manuscript/figures/` folder will contain:
+The `manuscript/figures/` folder contains the compiled figures:
 - `fig_gate_blocking_clean.*`
 - `fig_model_comparison_clean.*`
 - `fig6_cross_dataset_clean.*`

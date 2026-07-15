@@ -77,7 +77,7 @@ def compute_ch_inc(sw_df, channels, suffix=''):
     return sw_df[[f'ch_inc_{b}_sd' for b in bands]].mean(axis=1)
 
 def process_dataset(ds):
-    dataset_dir = ROOT / "archive/stale_pending_delete/data/data/raw/openneuro" / ds
+    dataset_dir = ROOT / "data/raw/openneuro" / ds
     edf_files = list(dataset_dir.rglob("sub-*/ses-*/eeg/*.edf"))
     
     all_features = []

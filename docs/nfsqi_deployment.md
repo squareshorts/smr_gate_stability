@@ -128,7 +128,7 @@ The repository includes a validation script to test whether the field deployment
 Current validation statuses:
 - Synthetic pseudo-online demo runs.
 - Latency benchmark runs.
-- **batch-summary reproduction validation** verifies the final Gate A/B/C counts and identities from archived summary CSVs (`results_submission_readiness`).
+- **batch-summary reproduction validation** verifies the final Gate A/B/C counts and identities from the bundled summary CSVs (`results/final`).
 - raw-window pseudo-online reproduction was not validated because rest calibration windows were not recovered from task EDFs.
 - feature-level validation was not run because window-feature CSVs were not present in the cleaned repo.
 
@@ -139,7 +139,7 @@ python scripts\validate_nfsqi_pseudo_online_reproduction.py `
   --config configs\nfsqi_smr_central.yaml `
   --mode batch-summary `
   --datasets ds004447,ds004444,ds004446 `
-  --batch-results-root archive\stale_pending_delete\results_submission_readiness `
+  --batch-results-root results\final `
   --out-json results\final\nfsqi_pseudo_online_reproduction_validation.json `
   --out-md results\final\nfsqi_pseudo_online_reproduction_validation.md
 ```
