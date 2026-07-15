@@ -1,5 +1,5 @@
-.libPaths("R_libs")
-library(tidyverse)
+library(dplyr)
+library(tidyr)
 library(ggplot2)
 library(patchwork)
 library(readr)
@@ -10,7 +10,7 @@ library(scales)
 pdf_device <- if (requireNamespace("ragg", quietly = TRUE)) "cairo_pdf" else grDevices::cairo_pdf
 
 # 1. Load Data
-ci_data <- read_csv("results/submission_readiness/bootstrap_ci_all_variants.csv")
+ci_data <- read_csv("results/final/bootstrap_ci_all_variants.csv")
 
 # Filter for snr_primary
 df_primary <- ci_data %>% filter(Variant == "snr_primary")
@@ -93,9 +93,9 @@ p_b <- ggplot(panel_b_data, aes(x = Dataset, y = Mean, fill = Model)) +
 fig6 <- p_a + p_b + plot_annotation(tag_levels = 'A')
 
 # 5. Save Figure 6
-ggsave("figures/submission_readiness/fig6_cross_dataset_clean.pdf", fig6, width = 10, height = 5, device = cairo_pdf)
-ggsave("figures/submission_readiness/fig6_cross_dataset_clean.png", fig6, width = 10, height = 5, dpi = 300)
-ggsave("figures/submission_readiness/fig6_cross_dataset_clean.tiff", fig6, width = 10, height = 5, dpi = 300)
+ggsave("manuscript/figures/fig6_cross_dataset_clean.pdf", fig6, width = 10, height = 5, device = cairo_pdf)
+ggsave("manuscript/figures/fig6_cross_dataset_clean.png", fig6, width = 10, height = 5, dpi = 300)
+ggsave("manuscript/figures/fig6_cross_dataset_clean.tiff", fig6, width = 10, height = 5, dpi = 300)
 
 # 6. Model Comparison Clean Figure (Replacement for nf_sqi_model_comparison.pdf)
 # Horizontal point range plot
@@ -110,22 +110,21 @@ p_model_comp <- ggplot(panel_b_data, aes(x = Mean, y = Model, color = Model)) +
         axis.text = element_text(color = "black"),
         strip.background = element_rect(fill = "white"))
 
-ggsave("figures/submission_readiness/fig_model_comparison_clean.pdf", p_model_comp, width = 6, height = 6, device = cairo_pdf)
-ggsave("figures/submission_readiness/fig_model_comparison_clean.png", p_model_comp, width = 6, height = 6, dpi = 300)
+ggsave("manuscript/figures/fig_model_comparison_clean.pdf", p_model_comp, width = 6, height = 6, device = cairo_pdf)
+ggsave("manuscript/figures/fig_model_comparison_clean.png", p_model_comp, width = 6, height = 6, dpi = 300)
 
 # 7. Gate Blocking Clean Figure (Replacement for nf_sqi_contamination_overlap_bar.pdf)
 # Component-wise plot + full cross-dataset blocks
 gate_blocking_data <- df_primary %>%
-  filter(Metric %in% c("HB_Only_Pct", "BB_Only_Pct", "Ch_Inc_Only_Pct", "Multi_Contam_Pct", "Blk_Full_Pct", "Blk_HB_Pct", "Blk_BBNF_Pct")) %>%
+  filter(Metric %in% c("HB_Only_Pct", "BB_Only_Pct", "Ch_Inc_Only_Pct", "Multi_Contam_Pct", "Blk_HB_Pct", "Blk_BBNF_Pct")) %>%
   mutate(
     Metric_Clean = case_when(
       Metric == "HB_Only_Pct" ~ "High beta (only)",
-      Metric == "BB_Only_Pct" ~ "Broadband/noise-floor (only)",
+      Metric == "BB_Only_Pct" ~ "Broadband/high frequency (only)",
       Metric == "Ch_Inc_Only_Pct" ~ "Channel inconsistency (only)",
-      Metric == "Multi_Contam_Pct" ~ "Multiple contaminations",
+      Metric == "Multi_Contam_Pct" ~ "Multiple criteria",
       Metric == "Blk_HB_Pct" ~ "High beta (marginal)",
-      Metric == "Blk_BBNF_Pct" ~ "Broadband/noise-floor (marginal)",
-      Metric == "Blk_Full_Pct" ~ "Full NF-SQI"
+      Metric == "Blk_BBNF_Pct" ~ "Broadband/high frequency (marginal)"
     ),
     Dataset = factor(Dataset, levels = c("ds004447", "ds004444", "ds004446"))
   ) %>%
@@ -135,10 +134,10 @@ p_gate_blocking <- ggplot(gate_blocking_data, aes(x = Mean, y = Metric_Clean)) +
   geom_pointrange(aes(xmin = CI_Lower, xmax = CI_Upper), color = "black", size = 0.8) +
   facet_wrap(~Dataset, ncol = 1) +
   scale_x_continuous(limits = c(0, 105)) +
-  labs(x = "Blocked windows (%)", y = NULL) +
+  labs(x = "Conditional coverage of quality-flagged Gate A candidates (%)", y = NULL) +
   theme_bw(base_size = 12) +
   theme(axis.text = element_text(color = "black"),
         strip.background = element_rect(fill = "white"))
 
-ggsave("figures/submission_readiness/fig_gate_blocking_clean.pdf", p_gate_blocking, width = 6, height = 8, device = cairo_pdf)
-ggsave("figures/submission_readiness/fig_gate_blocking_clean.png", p_gate_blocking, width = 6, height = 8, dpi = 300)
+ggsave("manuscript/figures/fig_gate_blocking_clean.pdf", p_gate_blocking, width = 6, height = 6.5, device = cairo_pdf)
+ggsave("manuscript/figures/fig_gate_blocking_clean.png", p_gate_blocking, width = 6, height = 6.5, dpi = 300)
