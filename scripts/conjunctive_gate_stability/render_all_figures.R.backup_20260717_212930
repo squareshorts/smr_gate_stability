@@ -1,0 +1,60 @@
+# Sole supported figure entry point. Renders exactly the figures listed in the manifest
+# configs/conjunctive_gate_stability/final_figures.csv. Figure scripts must be executed
+# through this file (they resolve common.R via getOption("CGS_FIGURE_SCRIPT_DIR")).
+
+args <- commandArgs(trailingOnly = FALSE)
+file_arg <- grep("^--file=", args, value = TRUE)
+
+if (length(file_arg) != 1L) {
+  stop("Could not resolve the path of render_all_figures.R")
+}
+
+this_file <- normalizePath(
+  sub("^--file=", "", file_arg),
+  winslash = "/",
+  mustWork = TRUE
+)
+
+# scripts/conjunctive_gate_stability/render_all_figures.R
+figure_script_dir <- file.path(dirname(this_file), "figures_r")
+project_root <- normalizePath(
+  file.path(dirname(this_file), "..", ".."),
+  winslash = "/",
+  mustWork = TRUE
+)
+
+options(
+  CGS_PROJECT_ROOT = project_root,
+  CGS_FIGURE_SCRIPT_DIR = figure_script_dir,
+  CGS_FIGURE_DIR = figure_script_dir  # backward-compatible alias
+)
+
+manifest_path <- file.path(project_root, "configs", "conjunctive_gate_stability", "final_figures.csv")
+if (!file.exists(manifest_path)) {
+  stop("Missing figure manifest: ", manifest_path)
+}
+manifest <- read.csv(manifest_path, stringsAsFactors = FALSE)
+if (!"figure" %in% names(manifest) || nrow(manifest) == 0L) {
+  stop("Figure manifest has no 'figure' column or no rows: ", manifest_path)
+}
+if ("order" %in% names(manifest)) {
+  manifest <- manifest[order(manifest$order), , drop = FALSE]
+}
+
+for (stem in manifest$figure) {
+  script_path <- file.path(figure_script_dir, paste0(stem, ".R"))
+  if (!file.exists(script_path)) {
+    stop("Manifest figure script not found: ", script_path)
+  }
+  message("Rendering: ", stem)
+  source(script_path, chdir = TRUE, local = new.env(parent = globalenv()))
+}
+
+message(
+  "Completed. Outputs under ",
+  normalizePath(
+    file.path(project_root, "results", "conjunctive_gate_final", "figures"),
+    winslash = "/",
+    mustWork = FALSE
+  )
+)

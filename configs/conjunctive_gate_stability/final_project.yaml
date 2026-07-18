@@ -1,0 +1,37 @@
+project: conjunctive_gate_stability
+direction: composition_theorem_plus_single_score_remedy
+dataset_order: [ds004447, ds004444, ds004446]
+sessions: 114
+participants: 57
+task_windows: 22418
+methods:
+  R0_ORIGINAL_AND: reference_conjunctive_gate
+  R1_MEAN_PERCENTILE: primary_remedy
+  R2_RMS_PERCENTILE: sensitivity
+  R3_ROBUST_MAHALANOBIS_PERCENTILE: negative_comparator
+canonical_paths:
+  canonical_feature_cache: results/baseline_gate_stability/checkpoints/features
+  reusable_feature_cache: results/runtime_assurance_remediation/checkpoints/feature_cache
+  decoder_features: results/baseline_gate_stability/checkpoints/downstream_decoder_features
+  fold_definition: results/downstream_decoder_validation/fold_definition.csv
+  raw_edf: data/raw/openneuro
+degradation_families: [D0_unchanged, D1_single_channel_broadband, D2_common_mode_broadband,
+  D3_narrowband_35_45, D4_narrowband_20_30, D5_transient_impulse, D6_clipping,
+  D7_partial_channel_freeze, D8_full_channel_variance_collapse, D9_missing_channel]
+severity_levels: [1, 2, 3, 4]
+figures: [figure1_theorem_schematic, figure2_observed_vs_predicted, figure3_cardinality,
+  figure4_lattice_effect, figure5_calibration_stability, figure6_holdout_transport,
+  figure7_operational, figure8_downstream, figure9_degradation, figure10_evidence_scorecard]
+primary_results:
+  law_pooled_spearman: 0.988
+  law_pooled_median_ae: 0.013
+  K1_jaccard: 0.915
+  K5_jaccard: 0.630
+  R0_splithalf: 0.707
+  R1_splithalf: 0.944
+  R1_transport: 0.933
+  R1_natural_vs_nogate: -0.0011
+  degradation_verdict: DEGRADATION-FAIL
+seeds: {selection: 20260717, count_matched_base: 20260716}
+software: {python: "3.10", numpy: "2.2", pandas: "2.3", scipy: "1.15", sklearn: present, mne: "1.12", sympy: "1.14"}
+config_hash: conjunctive_gate_final_v1

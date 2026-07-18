@@ -1,0 +1,7 @@
+discovered_path,dataset,file_type,file_count,total_size_bytes,events_present,edfs_present,appears_complete,matches_original_analysis_structure,search_outcome
+C:\work\smr_cn_revision\data\raw\openneuro\ds004447,ds004447,expected_dataset_root,0,0,false,false,false,false,not_found
+C:\work\smr_cn_revision\data\raw\openneuro\ds004444,ds004444,expected_dataset_root,0,0,false,false,false,false,not_found
+C:\work\smr_cn_revision\data\raw\openneuro\ds004446,ds004446,expected_dataset_root,0,0,false,false,false,false,not_found
+C:\work\camila_autismo\data\raw,not_target,EDF_collection,17,0,false,true,false,false,found_but_not_OpenNeuro_BMI_HDEEG
+C:\work\consciousness\data\sleep-edfx,not_target,EDF_collection,8,0,false,true,false,false,found_but_not_OpenNeuro_BMI_HDEEG
+C:\Users\mirro\Downloads\B0101T.edf,not_target,EDF_file,1,8472048,false,true,false,false,found_but_not_OpenNeuro_BMI_HDEEG

@@ -1,0 +1,11 @@
+order,label,x
+1,"Computational
+conformance",1
+2,"Calibration
+stability",2
+3,"Accepted-set
+stability",3
+4,"Operational
+availability",4
+5,"Downstream
+information cost",5

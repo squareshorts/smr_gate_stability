@@ -1,0 +1,8 @@
+"scheduler","sessions","median_display_transitions_per_min","median_displayed_reward_time_percent","median_reward_windows_per_min","median_longest_no_feedback_s","sessions_gap_gt_20s","sessions_gap_gt_30s","median_availability_retained","deterministic_replay_agreement","percent_sessions_gap_gt_30s","frozen_scheduler_status"
+"S0_instantaneous",114,16,7.08333333333333,8.5,22,60,22,1,1,19.2982456140351,"fail"
+"S1_fixed_1s_any",114,13.4741379310345,13.75,16.5,22,60,21,2,1,18.4210526315789,"fail"
+"S2_fixed_1s_all",114,0,0,0,77,114,110,0,1,96.4912280701754,"fail"
+"S3_fixed_2s_prop50",114,2,3.33333333333333,4,60,111,100,0.421052631578947,1,87.719298245614,"fail"
+"S4_fixed_2s_prop75",114,0,0,0,120,114,113,0,1,99.1228070175439,"fail"
+"S5_reward_hold_1s",114,14,13.75,16.5,21.5,60,22,1.91485507246377,1,19.2982456140351,"fail"
+"S6_reward_hold_2s",114,12,25,30,20.5,59,20,3.53743315508021,1,17.5438596491228,"fail"

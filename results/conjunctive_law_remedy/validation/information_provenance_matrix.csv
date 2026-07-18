@@ -1,0 +1,7 @@
+predicted_quantity,uses_baseline,uses_single_criterion_task,uses_multi_criterion_task,uses_heldout_dataset_info,uses_fitted_coefficients,note
+"p_j1 (criterion marginal, replicate 1)",yes,yes,no,no,no,baseline block 1 threshold applied to single-criterion task decisions
+"p_j2 (criterion marginal, replicate 2)",yes,yes,no,no,no,baseline block 2 threshold applied to single-criterion task decisions
+q_j (criterion joint across replicates),yes,yes,no,no,no,joint of the two single-criterion replicate indicators
+J_pred(S) parameter-free composition,yes,yes,no,no,no,"function of {p_j1,p_j2,q_j : j in S} only; no higher-order outcome"
+"observed J(S) (OUTCOME, not a predictor)",yes,no,yes,no,no,"actual composed multi-criterion gate; compared against prediction, never fed into it"
+LODO dependence correction coefficients,yes,yes,no,development-only,yes,"optional secondary; fit on 2 development datasets, frozen for holdout"

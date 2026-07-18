@@ -1,0 +1,4 @@
+method,family,fail_closed_rate,n
+R0,D9_missing_channel,1.0,1140
+R1,D9_missing_channel,1.0,1140
+R2,D9_missing_channel,1.0,1140

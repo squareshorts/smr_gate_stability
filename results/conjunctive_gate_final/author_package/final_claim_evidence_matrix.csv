@@ -1,0 +1,11 @@
+candidate_claim,evidence_status,exact_numerical_support,source_artifact,required_qualification,prohibited_overclaim
+Composition theorem holds,PROVEN,J_new<=J_old iff c(P1+P2)<=P1a+P2b; symbolic exact,theory/formal_theorem.md,independence assumption,not a universal biological law
+Parameter-free composition predicts subset Jaccard,STRONG,"pooled Spearman 0.988, median|err| 0.013, LODO 0.980-0.991",conjunctive_gate_instability/,"composition, not prospective forecast",not artifact ground truth
+Global agreement can conceal accepted-set instability,SHOWN,K5 overall agreement 0.756 vs Jaccard 0.63,cardinality_results_table.csv,accepted-set metric,do not equate agreement with reproducibility
+R1 single-score improves calibration stability,STRONG,split-half Jaccard 0.707 -> 0.944,calibration_stability_table.csv,retrospective replay,not clinical/efficacy
+R1 improves cross-session transport,STRONG,transport Jaccard 0.596 -> 0.933,transport_results_table.csv,3-dataset scope,not prospective
+R1 preserves downstream information,PASS,"natural vs no-gate -0.0011 [-0.0047,0.0027]",downstream_results_table.csv,reused decoder,not efficacy
+R1 does not reduce transitions >=30% at matched availability,LIMIT,~15% reduction,operational_results_table.csv,temporal switching remains,do not claim smoothness solved
+R1 fails closed on invalid input; no false withholding on unchanged,PASS,"D9 fail-closed 1.0, D0 false-withhold 0.0",degradation/fail_closed_results.csv,engineering test,not artifact detection accuracy
+R1 is insensitive to some single-channel degradations,NEGATIVE,clipping/frozen-channel top response ~0.0; single-ch broadband 0.54,degradation_results_table.csv,blind spots documented,do not claim general robustness
+Controlled degradation is engineering verification,QUALIFIED,DEGRADATION verdict DEGRADATION-FAIL,degradation/degradation_final_report.md,not natural-artifact validation,no clinical/regulatory claim

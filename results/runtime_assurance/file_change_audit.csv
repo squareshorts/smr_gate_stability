@@ -1,0 +1,9 @@
+path,action,scope,status
+scripts/runtime_assurance/,created,allowed isolated implementation,retained untracked
+tests/runtime_assurance/,created,allowed isolated tests,retained untracked
+results/runtime_assurance/,created,allowed isolated outputs,retained untracked
+data/raw/openneuro/,read_only,ignored raw inputs,not tracked
+results/downstream_decoder_validation/,preserved,archived prior analysis,unchanged
+manuscript/,not_modified,forbidden,unchanged
+results/final/,not_modified,forbidden,unchanged
+results/figure_corrections/,preserved,pre-existing unrelated untracked path,unchanged

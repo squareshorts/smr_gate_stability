@@ -1,0 +1,6 @@
+case,value
+A_factorized_identity_match_fraction,1.0
+B_independent_regime_nonincrease_fraction,0.9998
+B_dependent_regime_increase_count,9693
+B_independent_regime_increase_count,2
+interpretation,exact identity holds; dependence (not independence) enables J increase

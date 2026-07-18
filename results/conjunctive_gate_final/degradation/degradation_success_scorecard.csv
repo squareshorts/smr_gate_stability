@@ -1,0 +1,17 @@
+condition,passed
+C1_unchanged_reproduction_100,True
+C2_unchanged_false_withhold_le_1pct,True
+C3_missing_failclosed_100,True
+C4_nondecreasing_ge_6_families,True
+C5_top_ge_80_clip_frozen_missing,False
+C6_top_ge_60_for_ge_4_of_6,False
+C7_r1_below_r0_15pp_le_2_families,False
+C8_no_dataset_collapse,True
+C9_r1_deterministic,True
+C10_r1_rejects_invalid,True
+unchanged_false_withhold_R1,0.0
+missing_failclosed_R1,1.0
+n_monotonic_families,7
+n_families_R1_below_R0_by_15pp,5
+top_severity_R1,"{'D1_single_channel_broadband': 0.54, 'D2_common_mode_broadband': 0.96, 'D3_narrowband_35_45': 0.96, 'D4_narrowband_20_30': 0.58, 'D5_transient_impulse': 0.89, 'D6_clipping': 0.0, 'D7_partial_channel_freeze': 0.0, 'D8_full_channel_variance_collapse': 0.0}"
+VERDICT,DEGRADATION-FAIL

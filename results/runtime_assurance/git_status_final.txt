@@ -1,0 +1,13 @@
+Branch: analysis/runtime-assurance-interlock
+Commit: 2062eb33119f1606098fb8e6bd667399fdcd88f8
+
+Final git status --short:
+?? results/downstream_decoder_validation/
+?? results/figure_corrections/
+?? results/runtime_assurance/
+?? scripts/downstream_decoder_validation/
+?? scripts/runtime_assurance/
+?? tests/runtime_assurance/
+?? tests/test_downstream_decoder_validation_preflight.py
+
+Raw OpenNeuro data remain ignored by the `data/` .gitignore rule.

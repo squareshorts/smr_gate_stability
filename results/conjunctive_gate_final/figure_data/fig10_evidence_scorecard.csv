@@ -1,0 +1,10 @@
+evidence,value
+Theorem verified,1.0
+Composition Spearman,0.988
+R1 split-half Jaccard,0.944
+R0 split-half Jaccard,0.707
+R1 transport Jaccard,0.933
+R1 downstream vs no-gate,-0.0011
+R1 unchanged false-withhold,0.0
+R1 fail-closed missing,1.0
+R1 degradation families >=0.6 top,3.0

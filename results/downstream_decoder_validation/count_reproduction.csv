@@ -1,0 +1,19 @@
+dataset,count_name,expected_count,reproduced_count,difference,pass_fail,pipeline_used,notes
+ds004447,task_windows,5218,5218,0,PASS,canonical batch-feature wrapper and released raw replay,1 s windows with 0.5 s hop and >50 percent task overlap
+ds004447,Gate_A,905,905,0,PASS,canonical batch-feature wrapper and released raw replay,rest p75 SMR-SNR threshold
+ds004447,Gate_B,779,779,0,PASS,canonical batch-feature wrapper and released raw replay,Gate A plus high-beta pass
+ds004447,Gate_C_batch,472,472,0,PASS,canonical batch-feature wrapper,strict and inclusive quality comparison both equal 472
+ds004447,high_beta_blocks_among_Gate_A,126,126,0,PASS,canonical batch-feature wrapper and released raw replay,Gate A minus Gate B
+ds004447,Gate_C_streaming,472,472,0,PASS,released scripts/run_nfsqi_pseudo_online_real_edf.py,exact batch agreement
+ds004444,task_windows,14400,14400,0,PASS,canonical batch-feature wrapper and released raw replay,1 s windows with 0.5 s hop and >50 percent task overlap
+ds004444,Gate_A,2455,2455,0,PASS,canonical batch-feature wrapper and released raw replay,rest p75 SMR-SNR threshold
+ds004444,Gate_B,1811,1811,0,PASS,canonical batch-feature wrapper and released raw replay,Gate A plus high-beta pass
+ds004444,Gate_C_batch,933,933,0,PASS,canonical batch-feature wrapper,inclusive batch quality comparisons; one boundary-tie window
+ds004444,high_beta_blocks_among_Gate_A,644,644,0,PASS,canonical batch-feature wrapper and released raw replay,Gate A minus Gate B
+ds004444,Gate_C_streaming,932,932,0,PASS,released scripts/run_nfsqi_pseudo_online_real_edf.py,one lower than batch because streaming uses strict comparisons
+ds004446,task_windows,2800,2800,0,PASS,canonical batch-feature wrapper and released raw replay,release-defined five-subject subset and 10 sessions
+ds004446,Gate_A,451,451,0,PASS,canonical batch-feature wrapper and released raw replay,rest p75 SMR-SNR threshold
+ds004446,Gate_B,355,355,0,PASS,canonical batch-feature wrapper and released raw replay,Gate A plus high-beta pass
+ds004446,Gate_C_batch,215,215,0,PASS,canonical batch-feature wrapper,strict and inclusive quality comparison both equal 215
+ds004446,high_beta_blocks_among_Gate_A,96,96,0,PASS,canonical batch-feature wrapper and released raw replay,Gate A minus Gate B
+ds004446,Gate_C_streaming,215,215,0,PASS,released scripts/run_nfsqi_pseudo_online_real_edf.py,exact batch agreement

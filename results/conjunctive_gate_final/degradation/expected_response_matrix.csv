@@ -1,0 +1,11 @@
+family,expected_criteria,expected_R0_response,expected_R1_response,rationale
+D0_unchanged,none,no response expected,no response expected,control
+D1_single_channel_broadband,broadband; channel_inconsistency,high,high,single-ch broadband raises broadband power + channel imbalance
+D2_common_mode_broadband,broadband; noise_floor,high,high,common broadband raises broadband/noise floor
+D3_narrowband_35_45,noise_floor(35-45),high,medium-high,40 Hz sits in noise-floor reference band
+D4_narrowband_20_30,high_beta(20-30),high,medium-high,25 Hz sits in high-beta band
+D5_transient_impulse,transient; amplitude,high,medium,impulse raises transient score/peak-to-peak
+D6_clipping,transient; broadband,high,high,clipping adds harmonics + caps amplitude
+D7_partial_channel_freeze,channel_inconsistency,medium,medium,partial freeze creates channel imbalance
+D8_full_channel_variance_collapse,channel_inconsistency,high,high,frozen channel is strongly inconsistent
+D9_missing_channel,structural fail-closed,fail-closed,fail-closed,invalid input must be rejected

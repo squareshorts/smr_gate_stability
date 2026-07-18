@@ -1,0 +1,33 @@
+specification_version: "1.0.0-runtime-assurance"
+specification_date: "2026-07-15"
+software_version: "isolated runtime-assurance wrapper"
+channel_roles:
+  canonical_sensorimotor_channels: [E36, E104, E128]
+  missing_channel_policy: "fail_closed"
+  nonfinite_value_policy: "fail_closed"
+sampling:
+  window_duration_s: 1.0
+  hop_duration_s: 0.5
+  assumed_sampling_rate: "recording metadata; must be positive"
+bands_hz:
+  smr: [12, 15]
+  high_beta: [20, 30]
+  broadband: [4, 45]
+  noise_floor: [35, 45]
+target_evidence:
+  feature: smr_snr
+  formula: "smr_power / (broadband_power + 1e-9)"
+  threshold_source: "75th percentile of rest windows"
+  operator: ">"
+quality_thresholds:
+  high_beta_power: {percentile: 75, operator: "<"}
+  broadband_power: {percentile: 75, operator: "<"}
+  noise_floor_power: {percentile: 75, operator: "<"}
+  transient_score: {percentile: 90, operator: "<"}
+  channel_inconsistency: {percentile: 75, operator: "<"}
+threshold_boundary_policy: "Equality fails every criterion; upper-quality equality withholds reward."
+gate_definitions:
+  Gate_A: "smr_snr > smr_snr_min"
+  Gate_B: "Gate_A and high_beta_power < high_beta_max"
+  Gate_C: "Gate_B and all remaining quality criteria pass strict upper limits"
+reason_codes: [invalid_input, missing_feature, nonfinite_feature, invalid_threshold, low_smr_snr, high_beta, broadband, noise_floor, transient, channel_inconsistency]

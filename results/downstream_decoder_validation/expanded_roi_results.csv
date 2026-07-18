@@ -1,0 +1,2 @@
+dataset,roi_definition,status,reason
+all,"C3;C4;Cz;FC1;FC2;CP1;CP2;FC3;FC4;CP3;CP4",not_available,"Only Cz was present in sampled EDF channel names; fewer than the repository's five-channel feasibility threshold, so no new montage mapping was invented."

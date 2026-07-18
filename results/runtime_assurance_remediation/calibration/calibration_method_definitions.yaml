@@ -1,0 +1,21 @@
+C0_CURRENT_OVERLAP_EMPIRICAL:
+  rest_windows: 1 s
+  hop: 0.5 s
+  estimator: empirical p75/p90
+C1_NONOVERLAP_EMPIRICAL:
+  rest_windows: 1 s
+  hop: 1 s
+  estimator: empirical p75/p90
+C2_NONOVERLAP_HARRELL_DAVIS:
+  rest_windows: 1 s
+  hop: 1 s
+  estimator: Harrell-Davis quantile; weights are beta CDF differences over order statistics
+C3_BLOCK_SUBSAMPLE_EMPIRICAL:
+  rest_windows: 1 s
+  selection: one window per nonoverlapping 2 s block
+  estimator: empirical p75/p90
+C4_LOSO_SHRINKAGE:
+  rest_windows: 1 s
+  hop: 1 s
+  prior: dataset-level leave-one-subject-out rest prior
+  formula: theta = w * theta_session + (1 - w) * theta_prior, w = n / (n + 20)

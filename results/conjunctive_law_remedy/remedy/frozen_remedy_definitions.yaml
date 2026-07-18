@@ -1,0 +1,34 @@
+features:
+  Q1_high_beta: {column: high_beta_power, original_percentile: 75}
+  Q2_broadband: {column: broadband_power, original_percentile: 75}
+  Q3_high_freq_35_45: {column: noise_floor_power, original_percentile: 75}
+  Q4_transient: {column: transient_score, original_percentile: 90}
+  Q5_channel_inconsistency: {column: channel_inconsistency, original_percentile: 75, baseline_relative: true}
+percentile_transform:
+  definition: "u_j(x) = mean(rest_block_feature <= x)  (empirical CDF vs calibration rest)"
+  higher_means: more_extreme_vs_baseline
+  nonfinite_or_invalid: fail_closed_reject
+methods:
+  R0_ORIGINAL_AND: {type: logical_and_original_criteria}
+  R1_MEAN_PERCENTILE: {type: single_score, score: mean(u), threshold: rest_percentile}
+  R2_RMS_PERCENTILE: {type: single_score, score: sqrt(mean(u^2)), threshold: rest_percentile}
+  R3_ROBUST_MAHALANOBIS_PERCENTILE:
+    type: single_score
+    score: mahalanobis(u, robust_center, regularized_cov)
+    robust_center: per_dimension_median_of_rest_u
+    covariance: rest_u_covariance
+    regularization: shrinkage_alpha_0.10_toward_scaled_identity   # frozen constant
+    threshold: rest_percentile
+threshold_policy:
+  primary: p75
+  sensitivity: p80
+  matched_availability:
+    definition: single threshold from development datasets matching median R0 acceptance
+    status: secondary
+    fit_on: development_only
+calibration_splits: [first_half_second_half, odd_even_nonoverlap]
+holdout_rotations:
+  - {development: [ds004444, ds004446], holdout: ds004447}
+  - {development: [ds004447, ds004446], holdout: ds004444}
+  - {development: [ds004447, ds004444], holdout: ds004446}
+seeds: {count_matched: 50, base_seed: 20260717}

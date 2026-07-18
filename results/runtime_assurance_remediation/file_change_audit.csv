@@ -1,0 +1,119 @@
+path,created_modified_moved,permitted,purpose,canonical,archived,protected,final_status
+results/runtime_assurance_remediation/author_package/abstract_numbers_only.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/calibration_results_table.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/claim_evidence_matrix.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/executive_results_summary.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/external_baseline_results_table.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/fault_response_table.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/figure_replacement_map.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/journal_positioning_report.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/limitations_inventory.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/manuscript_change_map.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/methods_parameter_table.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/primary_results_table.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/scheduler_results_table.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/submission_readiness_report.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/table_replacement_map.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/title_options.txt,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/author_package/verification_requirements_table.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/calibration/calibration_recommendation.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/calibration/existing_calibration_baseline_summary.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/degradation/degradation_component_response.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/degradation/degradation_failure_cases.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/degradation/degradation_false_withhold_controls.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/degradation/degradation_input_manifest.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/degradation/degradation_results_long.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/degradation/degradation_results_summary.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/degradation/degradation_severity_curves.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/degradation/degradation_specification.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/degradation/degradation_verification_report.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/degradation/fault_response_matrix.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/external_baseline/external_baseline_comparison.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/external_baseline/external_baseline_failures.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/external_baseline/external_baseline_latency.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/external_baseline/external_baseline_method_audit.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/external_baseline/external_baseline_report.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/external_baseline/external_baseline_results_by_dataset.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/external_baseline/external_baseline_results_by_session.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/external_baseline/external_baseline_results_by_subject.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/figure_data/figure_scheduler_tradeoff_data.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/figure_data/figure_scorecard_data.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/figure_render_qc.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/figure_source_map.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/figure_value_validation.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/figures/figure_scheduler_tradeoff.pdf,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/figures/figure_scheduler_tradeoff.png,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/figures/figure_scorecard.pdf,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/figures/figure_scorecard.png,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/final_output_manifest.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/final_repository_tree.txt,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/final_verification_report.md,created_or_modified,True,runtime assurance remediation output,True,False,False,present
+results/runtime_assurance_remediation/final_verification_scorecard.csv,created_or_modified,True,runtime assurance remediation output,True,False,False,present
+results/runtime_assurance_remediation/frozen_remediation_plan.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/frozen_success_criteria.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/git_diff_final.txt,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/git_status_final.txt,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/montage/canonical_channel_mapping.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/montage/channel_coordinate_inventory.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/montage/expanded_roi_mapping_candidates.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/montage/expanded_roi_reproducibility_report.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/montage/montage_source_audit.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/protected_path_diff_check.txt,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/run_manifest_checkpointed.json,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/run_remediation.log,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/scheduler/scheduler_comparison.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/scheduler/scheduler_definitions.yaml,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/scheduler/scheduler_failure_sessions.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/scheduler/scheduler_metrics_by_dataset.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/scheduler/scheduler_metrics_by_session.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/scheduler/scheduler_metrics_by_subject.csv,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/scheduler/scheduler_recommendation.md,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+results/runtime_assurance_remediation/test_results.txt,created_or_modified,True,runtime assurance remediation output,False,False,False,present
+archive/stale_pending_delete/phase1_cache/.pytest_cache/.gitignore,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/.pytest_cache/CACHEDIR.TAG,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/.pytest_cache/README.md,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/.pytest_cache/v/cache/lastfailed,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/.pytest_cache/v/cache/nodeids,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/.pytest_tmp/test_missing_data_skipped0/out.json,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/.pytest_tmp/test_missing_data_skipped0/out.md,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/.pytest_tmp/test_synthetic_exact_match0/out.json,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/.pytest_tmp/test_synthetic_exact_match0/out.md,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/.pytest_tmp/test_synthetic_mismatch0/out.json,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/.pytest_tmp/test_synthetic_mismatch0/out.md,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/results/figure_corrections/scripts/__pycache__/fig_common.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/__pycache__/__init__.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/__pycache__/benchmark_nfsqi_latency.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/__pycache__/run_nfsqi_pseudo_online.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/__pycache__/validate_nfsqi_pseudo_online_reproduction.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/downstream_decoder_validation/__pycache__/__init__.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/downstream_decoder_validation/__pycache__/acquire_openneuro_inputs.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/downstream_decoder_validation/__pycache__/quality_policies.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/downstream_decoder_validation/__pycache__/reproduce_batch_counts.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/downstream_decoder_validation/__pycache__/run_all.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/downstream_decoder_validation/__pycache__/run_decoder_validation.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/downstream_decoder_validation/__pycache__/summarize_decoder_validation.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/runtime_assurance/__pycache__/__init__.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/runtime_assurance/__pycache__/reference_interlock.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/scripts/runtime_assurance/__pycache__/run_all.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/empirical/__pycache__/__init__.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/empirical/__pycache__/nf_sqi_common.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/empirical/__pycache__/nf_sqi_realtime.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/empirical/__pycache__/nf_sqi_t1_features.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/simulations/__pycache__/__init__.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/simulations/__pycache__/wp1_stuart_landau_validity.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/simulations/__pycache__/wp2_weak_coupling_checks.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/simulations/__pycache__/wp3_null_models.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/simulations/__pycache__/wp4_criticality.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/simulations/__pycache__/wp5_burst_threshold_surrogates.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/simulations/__pycache__/wp6_parameter_regime_map.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/utils/__pycache__/__init__.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/utils/__pycache__/manifest.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/utils/__pycache__/paths.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/utils/__pycache__/plotting.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/src/utils/__pycache__/signal_metrics.cpython-310.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/tests/__pycache__/test_downstream_decoder_validation_preflight.cpython-310-pytest-9.0.2.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/tests/__pycache__/test_nfsqi_pseudo_online_reproduction_validation.cpython-310-pytest-9.0.2.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/tests/__pycache__/test_nfsqi_pseudo_online_reproduction_validation.cpython-310-pytest-9.1.1.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/tests/__pycache__/test_nfsqi_realtime.cpython-310-pytest-9.0.2.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/tests/__pycache__/test_nfsqi_realtime.cpython-310-pytest-9.1.1.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved
+archive/stale_pending_delete/phase1_cache/tests/runtime_assurance/__pycache__/test_reference_interlock.cpython-310-pytest-9.0.2.pyc,moved,True,cache/runtime artifact; reversible archive move,False,True,False,moved

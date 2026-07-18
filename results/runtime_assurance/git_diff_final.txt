@@ -1,0 +1,5 @@
+# Final git diff --name-only
+
+No tracked files differ from HEAD. All runtime-assurance work is untracked pending review.
+
+`git diff --exit-code -- manuscript results/final` passed: those protected paths were untouched.

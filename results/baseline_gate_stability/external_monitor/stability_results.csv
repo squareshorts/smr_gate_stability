@@ -1,0 +1,4 @@
+monitor,split_type,participants,median_accepted_set_jaccard,median_overall_agreement,median_positive_agreement,median_negative_agreement,median_mutual_withholding_fraction,accepted_set_jaccard_ci_low,accepted_set_jaccard_ci_high,overall_agreement_ci_low,overall_agreement_ci_high,positive_agreement_ci_low,positive_agreement_ci_high,negative_agreement_ci_low,negative_agreement_ci_high,mutual_withholding_fraction_ci_low,mutual_withholding_fraction_ci_high,sessions,percent_sessions_jaccard_ge_0_80
+M5_RIEMANNIAN_POTATO,first_half_second_half,57,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,114,100.0
+M5_RIEMANNIAN_POTATO,odd_even_nonoverlap,57,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,114,100.0
+M5_RIEMANNIAN_POTATO,temporal_block_bootstrap_pair,57,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,114,100.0

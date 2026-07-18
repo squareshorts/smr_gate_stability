@@ -1,0 +1,10 @@
+fold_id,dataset,subject,train_session,test_session,analysis,reason,status,monitor
+ds004444_sub-005_ses-01_to_ses-16,ds004444,sub-005,ses-01,ses-16,natural,fewer than 10 retained windows in at least one class,nonviable,M3_AMPLITUDE_150
+ds004444_sub-005_ses-16_to_ses-01,ds004444,sub-005,ses-16,ses-01,natural,fewer than 10 retained windows in at least one class,nonviable,M3_AMPLITUDE_150
+ds004444_sub-010_ses-01_to_ses-16,ds004444,sub-010,ses-01,ses-16,natural,fewer than 10 retained windows in at least one class,nonviable,M3_AMPLITUDE_150
+ds004444_sub-010_ses-16_to_ses-01,ds004444,sub-010,ses-16,ses-01,natural,fewer than 10 retained windows in at least one class,nonviable,M3_AMPLITUDE_150
+ds004444_sub-016_ses-01_to_ses-16,ds004444,sub-016,ses-01,ses-16,natural,fewer than 10 retained windows in at least one class,nonviable,M3_AMPLITUDE_150
+ds004444_sub-027_ses-16_to_ses-01,ds004444,sub-027,ses-16,ses-01,natural,fewer than 10 retained windows in at least one class,nonviable,M3_AMPLITUDE_150
+ds004444_sub-028_ses-01_to_ses-16,ds004444,sub-028,ses-01,ses-16,natural,fewer than 10 retained windows in at least one class,nonviable,M3_AMPLITUDE_150
+ds004444_sub-028_ses-16_to_ses-01,ds004444,sub-028,ses-16,ses-01,natural,fewer than 10 retained windows in at least one class,nonviable,M3_AMPLITUDE_150
+ds004444_sub-030_ses-16_to_ses-01,ds004444,sub-030,ses-16,ses-01,natural,fewer than 10 retained windows in at least one class,nonviable,M3_AMPLITUDE_150

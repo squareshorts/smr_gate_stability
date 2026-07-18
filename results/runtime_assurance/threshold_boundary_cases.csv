@@ -1,0 +1,7 @@
+criterion,relation,value,threshold,gate_c_allowed,expected,gate_a_requested
+high_beta_power upper limit,below,1.9,2.0,True,pass,
+high_beta_power upper limit,equal,2.0,2.0,False,withhold,
+high_beta_power upper limit,above,2.1,2.0,False,withhold,
+smr_snr lower limit,below,0.9,1.0,,withhold,False
+smr_snr lower limit,equal,1.0,1.0,,withhold,False
+smr_snr lower limit,above,1.1,1.0,,request,True

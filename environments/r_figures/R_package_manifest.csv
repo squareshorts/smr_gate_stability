@@ -1,0 +1,3 @@
+package,required,status
+ggplot2,yes,install_on_host
+R base (cairo),yes,host_present

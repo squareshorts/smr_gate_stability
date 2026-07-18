@@ -1,0 +1,5 @@
+1. A composition theorem for accepted-set stability of conjunctive EEG quality gates
+2. When adding quality criteria destabilises acceptance: a conjunctive-instability principle and a single-score remedy
+3. Accepted-set stability of baseline-calibrated EEG gates: theorem, validation, and a mean-percentile remedy
+4. Multiplicative stability of conjunctive quality gates and a single-score alternative
+5. From conjunctive thresholds to a single score: accepted-set stability in EEG/SMR quality gating

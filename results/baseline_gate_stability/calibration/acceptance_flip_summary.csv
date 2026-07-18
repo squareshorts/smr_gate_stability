@@ -1,0 +1,16 @@
+monitor,split_type,acceptance_to_withhold_flips,withhold_to_acceptance_flips,median_mutual_withholding_fraction
+M0_NO_GATE,first_half_second_half,0,0,0.0
+M0_NO_GATE,odd_even_nonoverlap,0,0,0.0
+M0_NO_GATE,temporal_block_bootstrap_pair,0,0,0.0
+M1_HIGH_BETA,first_half_second_half,863,711,0.09791666666666665
+M1_HIGH_BETA,odd_even_nonoverlap,407,287,0.1166666666666666
+M1_HIGH_BETA,temporal_block_bootstrap_pair,408,278,0.1166666666666666
+M2_BROADBAND_HIGH_FREQUENCY,first_half_second_half,1458,1203,0.15565476190476185
+M2_BROADBAND_HIGH_FREQUENCY,odd_even_nonoverlap,604,492,0.18541666666666665
+M2_BROADBAND_HIGH_FREQUENCY,temporal_block_bootstrap_pair,641,354,0.182183908045977
+M3_AMPLITUDE_150,first_half_second_half,0,0,0.0
+M3_AMPLITUDE_150,odd_even_nonoverlap,0,0,0.0
+M3_AMPLITUDE_150,temporal_block_bootstrap_pair,0,0,0.0
+M4_NFSQI_FULL_QUALITY,first_half_second_half,2244,2442,0.2833333333333333
+M4_NFSQI_FULL_QUALITY,odd_even_nonoverlap,986,875,0.31781609195402294
+M4_NFSQI_FULL_QUALITY,temporal_block_bootstrap_pair,1195,864,0.31034482758620685

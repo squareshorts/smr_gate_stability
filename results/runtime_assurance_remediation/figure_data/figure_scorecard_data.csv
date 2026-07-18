@@ -1,0 +1,8 @@
+"requirement","status","observed_result"
+"batch_streaming_identity","pass","22418 windows, 0 differences"
+"scheduler_remediation","partial","no candidate scheduler satisfies all frozen criteria"
+"calibration_remediation","fail","new remediation incomplete; existing 120 s Jaccard 0.735"
+"external_established_monitor","fail","not run"
+"controlled_degradation","fail","not run"
+"montage_three_channel","partial","labels present; exact 10-20 mapping not encoded"
+"expanded_roi","fail","not reproducible"

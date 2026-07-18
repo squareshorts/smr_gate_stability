@@ -1,0 +1,10 @@
+results_root: results/baseline_gate_stability
+checkpoint_root: results/baseline_gate_stability/checkpoints
+external_environment: environments/external_monitor
+dataset_order:
+  - ds004447
+  - ds004444
+  - ds004446
+protected_paths:
+  - manuscript
+  - results/final

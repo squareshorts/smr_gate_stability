@@ -1,0 +1,4 @@
+method,countmatched_minus_R0,countmatched_ci_low,countmatched_ci_high
+R1,0.0042,-0.0035,0.0122
+R2,0.0054,-0.002,0.0129
+R3,0.003,-0.0052,0.0117

@@ -1,0 +1,74 @@
+ M .gitignore
+ M .pytest_tmp/test_missing_data_fails_withoucurrent
+ D .pytest_tmp/test_missing_data_skipped0/out.json
+ D .pytest_tmp/test_missing_data_skipped0/out.md
+ M .pytest_tmp/test_missing_data_skippedcurrent
+ D .pytest_tmp/test_synthetic_exact_match0/out.json
+ D .pytest_tmp/test_synthetic_exact_match0/out.md
+ M .pytest_tmp/test_synthetic_exact_matchcurrent
+ D .pytest_tmp/test_synthetic_mismatch0/out.json
+ D .pytest_tmp/test_synthetic_mismatch0/out.md
+ M .pytest_tmp/test_synthetic_mismatchcurrent
+ M Makefile
+ M requirements.txt
+ M results/final/bootstrap_ci_all_variants.csv
+ M results/final/loso_model_comparison_all_variants.csv
+ M results/final/nfsqi_artifact_baseline_comparison.csv
+ M results/final/nfsqi_feedback_density.csv
+ M results/final/nfsqi_latency_benchmark.json
+ M results/final/nfsqi_montage_sensitivity.csv
+ M results/final/nfsqi_operating_tradeoff.csv
+ M results/final/nfsqi_pseudo_online_demo.csv
+ M results/final/nfsqi_pseudo_online_demo.json
+ M results/final/nfsqi_pseudo_online_reproduction_validation.json
+ M results/final/nfsqi_pseudo_online_reproduction_validation.md
+ M results/final/nfsqi_pseudo_online_reproduction_validation_ds004446.json
+ M results/final/nfsqi_pseudo_online_reproduction_validation_ds004446.md
+ M results/final/nfsqi_statistical_tests.csv
+ M results/final/nfsqi_synthetic_demo_input.csv
+ M results/final/power_sensitivity_replication_table.csv
+ M results/final/power_sensitivity_summary.md
+ M results/final/reproducibility_metadata.md
+ M results/final/reproduction_commands.txt
+ M results/final/reward_density_summary.md
+ M results/final/snr_primary_replication_table.csv
+ M results/final/snr_primary_summary.md
+ M results/final/table6A_gate_blocking.csv
+ M results/final/table6A_gate_blocking_latex.txt
+ M results/final/table6B_auc_comparison.csv
+ M results/final/table6B_auc_comparison_latex.txt
+ D scripts/__init__.py
+ M scripts/compute_reviewer_metrics.py
+ M src/empirical/nf_sqi_overlap_decomposition.py
+ M src/empirical/nf_sqi_t2_t3_gates_and_admissibility.py
+ M src/empirical/nf_sqi_t6_robustness.py
+?? configs/baseline_gate_stability/
+?? configs/conjunctive_gate_stability/
+?? docs/baseline_gate_stability/
+?? docs/conjunctive_gate_stability/
+?? environments/
+?? results/baseline_gate_stability/
+?? results/conjunctive_gate_final/
+?? results/conjunctive_gate_instability/
+?? results/conjunctive_law_remedy/
+?? results/downstream_decoder_validation/
+?? results/figure_corrections/
+?? results/repository_cleanup/
+?? results/repository_cleanup_final/
+?? results/repository_cleanup_stability/
+?? results/runtime_assurance/
+?? results/runtime_assurance_remediation/
+?? scripts/baseline_gate_stability/
+?? scripts/conjunctive_gate_instability/
+?? scripts/conjunctive_gate_stability/
+?? scripts/conjunctive_law_remedy/
+?? scripts/downstream_decoder_validation/
+?? scripts/runtime_assurance/
+?? scripts/runtime_assurance_remediation/
+?? src/baseline_gate_stability/
+?? tests/baseline_gate_stability/
+?? tests/conjunctive_gate_instability/
+?? tests/conjunctive_gate_stability/
+?? tests/conjunctive_law_remedy/
+?? tests/runtime_assurance/
+?? tests/test_downstream_decoder_validation_preflight.py

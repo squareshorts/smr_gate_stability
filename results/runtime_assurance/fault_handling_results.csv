@@ -1,0 +1,11 @@
+case,gate_a_requested,gate_b_allowed,gate_c_allowed,withhold,reason_codes,invalid_input,feature_values,threshold_values,specification_version,pass
+missing_feature,False,False,False,True,invalid_input;missing_feature,True,{},"{'smr_snr_min': 1.0, 'high_beta_max': 2.0, 'broadband_max': 2.0, 'noise_floor_max': 2.0, 'transient_max': 2.0, 'channel_inconsistency_max': 2.0}",1.0.0-runtime-assurance,True
+NaN,False,False,False,True,invalid_input;nonfinite_feature,True,"{'smr_snr': nan, 'high_beta_power': 1.0, 'broadband_power': 1.0, 'noise_floor_power': 1.0, 'transient_score': 1.0, 'channel_inconsistency': 1.0}","{'smr_snr_min': 1.0, 'high_beta_max': 2.0, 'broadband_max': 2.0, 'noise_floor_max': 2.0, 'transient_max': 2.0, 'channel_inconsistency_max': 2.0}",1.0.0-runtime-assurance,True
+positive_infinity,False,False,False,True,invalid_input;nonfinite_feature,True,"{'smr_snr': inf, 'high_beta_power': 1.0, 'broadband_power': 1.0, 'noise_floor_power': 1.0, 'transient_score': 1.0, 'channel_inconsistency': 1.0}","{'smr_snr_min': 1.0, 'high_beta_max': 2.0, 'broadband_max': 2.0, 'noise_floor_max': 2.0, 'transient_max': 2.0, 'channel_inconsistency_max': 2.0}",1.0.0-runtime-assurance,True
+negative_infinity,False,False,False,True,invalid_input;nonfinite_feature,True,"{'smr_snr': -inf, 'high_beta_power': 1.0, 'broadband_power': 1.0, 'noise_floor_power': 1.0, 'transient_score': 1.0, 'channel_inconsistency': 1.0}","{'smr_snr_min': 1.0, 'high_beta_max': 2.0, 'broadband_max': 2.0, 'noise_floor_max': 2.0, 'transient_max': 2.0, 'channel_inconsistency_max': 2.0}",1.0.0-runtime-assurance,True
+empty_threshold_bundle,False,False,False,True,invalid_input;invalid_threshold,True,"{'smr_snr': 2.0, 'high_beta_power': 1.0, 'broadband_power': 1.0, 'noise_floor_power': 1.0, 'transient_score': 1.0, 'channel_inconsistency': 1.0}",{},1.0.0-runtime-assurance,True
+flat_channel,,,,True,invalid_input,True,,,,True
+missing_channel,,,,True,invalid_input,True,,,,True
+short_sample_count,,,,True,invalid_input,True,,,,True
+wrong_sampling_rate,,,,True,invalid_input,True,,,,True
+malformed_configuration,,,,True,invalid_input,True,,,,True

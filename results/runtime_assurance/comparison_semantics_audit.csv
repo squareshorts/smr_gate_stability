@@ -1,0 +1,7 @@
+feature,batch_operator,streaming_operator,intended_operator,threshold_equality_result,file,function,affected_datasets,affected_windows
+smr_snr,>,>,>,withhold,isolated runtime-assurance wrapper,reference_interlock.evaluate,all,0
+high_beta_power,<=,<,<,withhold,isolated runtime-assurance wrapper,reference_interlock.evaluate,ds004444,1 legacy tie
+broadband_power,<=,<,<,withhold,isolated runtime-assurance wrapper,reference_interlock.evaluate,all,legacy comparison audit
+noise_floor_power,<=,<,<,withhold,isolated runtime-assurance wrapper,reference_interlock.evaluate,all,legacy comparison audit
+transient_score,<=,<,<,withhold,isolated runtime-assurance wrapper,reference_interlock.evaluate,all,legacy comparison audit
+channel_inconsistency,<=,<,<,withhold,isolated runtime-assurance wrapper,reference_interlock.evaluate,all,legacy comparison audit

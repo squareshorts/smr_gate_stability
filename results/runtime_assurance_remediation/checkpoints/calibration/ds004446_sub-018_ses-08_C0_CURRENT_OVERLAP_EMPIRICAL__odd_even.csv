@@ -1,0 +1,2 @@
+dataset,subject,session,method,decision_agreement,accepted_set_jaccard,withheld_set_jaccard,accepted_count_difference,gate_c_windows_per_min_difference,longest_feedback_free_period_difference_s,acceptance_to_withhold_flips,withhold_to_acceptance_flips
+ds004446,sub-018,ses-08,C0_CURRENT_OVERLAP_EMPIRICAL,0.9535714285714286,0.6285714285714286,0.9496124031007752,-5,-2.142857142857143,3.5,9,4

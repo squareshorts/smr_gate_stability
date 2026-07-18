@@ -1,0 +1,7 @@
+three_channel_fit=pass
+finite_identity_prediction=1
+nonfinite_fails_closed=True
+singular_fails_closed=True
+threshold_equality_accepts=False
+metric=riemann
+threshold=3.0

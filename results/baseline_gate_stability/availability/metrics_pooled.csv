@@ -1,0 +1,6 @@
+monitor,participants,median_accepted_windows_per_min,median_acceptance_duty_cycle,median_longest_feedback_free_s,median_state_transitions_per_min,median_time_to_first_accepted_s,accepted_windows_per_min_ci_low,accepted_windows_per_min_ci_high,acceptance_duty_cycle_ci_low,acceptance_duty_cycle_ci_high,longest_feedback_free_s_ci_low,longest_feedback_free_s_ci_high,state_transitions_per_min_ci_low,state_transitions_per_min_ci_high,time_to_first_accepted_s_ci_low,time_to_first_accepted_s_ci_high,sessions,percent_sessions_gap_gt_20s,percent_sessions_gap_gt_30s
+M0_NO_GATE,57,120.0,1.0,0.0,0.0,0.0,120.0,120.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,114,0.0,0.0
+M1_HIGH_BETA,57,103.5,0.8625,1.5,22.5,0.0,101.5,105.5,0.8458333333333334,0.8791666666666667,1.25,1.75,20.25,24.844827586206897,0.0,0.0,114,0.0,0.0
+M2_BROADBAND_HIGH_FREQUENCY,57,97.22413793103448,0.8102011494252873,1.75,27.534482758620687,0.0,93.25,100.71428571428572,0.7770833333333333,0.8392857142857143,1.5,2.25,26.16949152542373,33.25,0.0,0.0,114,0.0,0.0
+M3_AMPLITUDE_150,57,119.5,0.9958333333333333,0.25,0.21428571428571427,0.0,118.75,120.0,0.9895833333333334,1.0,0.0,0.5,0.0,0.5,0.0,0.0,114,0.0,0.0
+M4_NFSQI_FULL_QUALITY,57,74.25,0.61875,3.0,42.103448275862064,0.25,69.77586206896552,78.89655172413794,0.5814655172413794,0.6574712643678161,2.5,3.5,41.57142857142857,44.0,0.0,0.25,114,0.0,0.0

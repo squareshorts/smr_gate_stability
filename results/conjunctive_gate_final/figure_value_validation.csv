@@ -1,0 +1,9 @@
+figure,check,max_abs_discrepancy,ok
+figure1_composition_theorem,J_new<=J_old holds,0.0,True
+figure2_composition_validation,n subsets pooled,0.0,True
+figure3_cardinality_lattice,K1-K5 present,0.0,True
+figure4_stability_transport,R1 split-half median vs canonical (rounded table),1.5160955347925942e-05,True
+figure5_operational_behavior,metrics present,0.0,True
+figure6_downstream_information,3 methods,0.0,True
+figure7_controlled_degradation,8 families top-severity paired,0.0,True
+figureS1_evidence_scorecard,categories present,0.0,True

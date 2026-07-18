@@ -1,0 +1,4 @@
+holdout,n_test,uncorrected_spearman,uncorrected_mae,uncorrected_median_ae,calibration_slope,calibration_intercept,corrected_mae,correction_fit_on,primary
+ds004444,1860,0.9913,0.0309,0.0136,0.868,0.122,0.0254,development_only,uncorrected
+ds004446,310,0.9858,0.0197,0.0092,0.8939,0.1062,0.0131,development_only,uncorrected
+ds004447,1364,0.9803,0.0293,0.014,0.8583,0.1306,0.0235,development_only,uncorrected

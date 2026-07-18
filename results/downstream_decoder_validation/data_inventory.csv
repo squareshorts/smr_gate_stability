@@ -1,0 +1,4 @@
+dataset,raw_root,raw_root_present,edf_count,events_count,released_feature_cache,released_feature_cache_present,selected_file_count,selected_bytes,reconciliation_status
+ds004447,data\raw\openneuro\ds004447,true,44,44,generated_in_memory_by_canonical_feature_wrapper,false,225,2008363255,COUNT_REPRODUCTION_PASS
+ds004444,data\raw\openneuro\ds004444,true,60,60,generated_in_memory_by_canonical_feature_wrapper,false,307,6721098811,COUNT_REPRODUCTION_PASS
+ds004446,data\raw\openneuro\ds004446,true,10,10,generated_in_memory_by_canonical_feature_wrapper,false,57,1071128672,COUNT_REPRODUCTION_PASS

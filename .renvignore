@@ -1,0 +1,10 @@
+archive/
+data/
+results/**/checkpoints/
+results/runtime_assurance*/
+results/baseline_gate_stability/checkpoints/
+environments/r_figures/library/
+environments/r_figures/.Rlib/
+renv/library/
+.pytest_tmp/
+**/__pycache__/

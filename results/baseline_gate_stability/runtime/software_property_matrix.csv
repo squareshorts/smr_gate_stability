@@ -1,0 +1,7 @@
+monitor,calibration,invalid_fails_closed,missing_channel_fails_closed,flat_channel_fails_closed,nonfinite_fails_closed,batch_streaming_conformance,reason_code_transparency,tunable_parameter_count
+M0_NO_GATE,validity only,True,True,True,True,not_applicable,True,0
+M1_HIGH_BETA,p75 rest,True,True,True,True,verified_exact,True,1
+M2_BROADBAND_HIGH_FREQUENCY,two p75 rest limits,True,True,True,True,verified_exact,True,2
+M3_AMPLITUDE_150,fixed 150 uV,True,True,True,True,verified_exact,True,1
+M4_NFSQI_FULL_QUALITY,p75/p90 rest limits,True,True,True,True,verified_exact,True,5
+M5_RIEMANNIAN_POTATO,Potato z<3,True,True,True,True,package_batch_equals_per_window,True,2

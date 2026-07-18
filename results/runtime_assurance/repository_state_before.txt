@@ -1,0 +1,15 @@
+Branch before runtime-assurance work: analysis/downstream-decoder-validation
+Commit: 2062eb33119f1606098fb8e6bd667399fdcd88f8
+Archive tag created: archive/pre-runtime-assurance-analysis
+Branch created for this work: analysis/runtime-assurance-interlock
+
+Initial git status --short:
+?? results/downstream_decoder_validation/
+?? results/figure_corrections/
+?? scripts/downstream_decoder_validation/
+?? tests/test_downstream_decoder_validation_preflight.py
+
+Initial git diff --name-only:
+(none; all listed work was untracked)
+
+Raw OpenNeuro inputs are ignored by .gitignore rule data/.

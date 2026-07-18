@@ -1,0 +1,11 @@
+Repository root: C:/work/smr_cn_revision
+Recorded before analysis branch creation: 2026-07-15 (America/Fortaleza)
+Original branch: cleanup/submission-ready-repo
+Analysis branch requested: analysis/downstream-decoder-validation
+Commit: 2062eb33119f1606098fb8e6bd667399fdcd88f8
+
+git status --short --branch
+## cleanup/submission-ready-repo...origin/cleanup/submission-ready-repo
+?? results/figure_corrections/
+
+Note: results/figure_corrections/ was pre-existing and is outside this analysis.

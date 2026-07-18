@@ -1,0 +1,7 @@
+control,method,value
+D0 unchanged: decision reproduction,R0,1.0
+D0 unchanged: decision reproduction,R1,1.0
+D0 unchanged: decision reproduction,R2,1.0
+D9 missing: fail-closed rate,R0,1.0
+D9 missing: fail-closed rate,R1,1.0
+D9 missing: fail-closed rate,R2,1.0

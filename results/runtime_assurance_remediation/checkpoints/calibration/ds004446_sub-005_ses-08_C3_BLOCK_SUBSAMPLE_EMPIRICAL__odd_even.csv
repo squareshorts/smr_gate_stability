@@ -1,0 +1,2 @@
+dataset,subject,session,method,decision_agreement,accepted_set_jaccard,withheld_set_jaccard,accepted_count_difference,gate_c_windows_per_min_difference,longest_feedback_free_period_difference_s,acceptance_to_withhold_flips,withhold_to_acceptance_flips
+ds004446,sub-005,ses-08,C3_BLOCK_SUBSAMPLE_EMPIRICAL,0.9142857142857143,0.48936170212765956,0.9066147859922179,16,6.857142857142857,-9.5,4,20

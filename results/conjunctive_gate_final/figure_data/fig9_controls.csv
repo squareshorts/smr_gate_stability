@@ -1,0 +1,7 @@
+case,method,rate
+D0_unchanged_false_withhold,R0,0.0
+D0_unchanged_false_withhold,R1,0.0
+D0_unchanged_false_withhold,R2,0.0
+D9_missing_fail_closed,R0,1.0
+D9_missing_fail_closed,R1,1.0
+D9_missing_fail_closed,R2,1.0

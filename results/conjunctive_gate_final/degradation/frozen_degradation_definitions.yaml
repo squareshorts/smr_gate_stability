@@ -1,0 +1,46 @@
+montage: [E36, E104, E128]
+window_s: 1.0
+hop_s: 0.5
+robust_scale: "robust_sigma = 1.4826 * MAD(channel_signal)   # per channel, per window"
+affected_channel_rule: "channel_index = window_global_index mod 3 (deterministic; balances E36/E104/E128)"
+selection_seed: 20260717
+max_windows_per_session: 10
+min_windows_flag: 5
+severity_levels: [1, 2, 3, 4]
+families:
+  D0_unchanged: {mechanism: identity, severities: [0]}
+  D1_single_channel_broadband:
+    mechanism: "add white gaussian noise to one channel; std = level * 0.5 * robust_sigma_channel"
+    amplitude_by_level: [0.5, 1.0, 1.5, 2.0]
+    noise_seed_base: 41000
+  D2_common_mode_broadband:
+    mechanism: "add identical white gaussian noise to all channels; std = level * 0.5 * robust_sigma_mean"
+    amplitude_by_level: [0.5, 1.0, 1.5, 2.0]
+    noise_seed_base: 42000
+  D3_narrowband_35_45:
+    mechanism: "add sinusoid at 40 Hz to all channels; amp = level * 0.5 * robust_sigma_mean; phase=0"
+    frequency_hz: 40.0
+    amplitude_by_level: [0.5, 1.0, 1.5, 2.0]
+  D4_narrowband_20_30:
+    mechanism: "add sinusoid at 25 Hz to all channels; amp = level * 0.5 * robust_sigma_mean; phase=0"
+    frequency_hz: 25.0
+    amplitude_by_level: [0.5, 1.0, 1.5, 2.0]
+  D5_transient_impulse:
+    mechanism: "add single positive impulse at window center on affected channel; width=5 samples"
+    amplitude_by_level: [2.0, 4.0, 8.0, 16.0]   # x robust_sigma_channel
+    location: center
+    sign: positive
+    width_samples: 5
+  D6_clipping:
+    mechanism: "symmetric clip of all channels at limit = fraction * max_abs(window)"
+    fraction_by_level: [0.6, 0.45, 0.30, 0.15]  # smaller fraction = more clipping = higher severity
+  D7_partial_channel_freeze:
+    mechanism: "hold affected channel constant (last pre-freeze value) over trailing temporal fraction"
+    frozen_fraction_by_level: [0.25, 0.50, 0.75, 0.90]
+  D8_full_channel_variance_collapse:
+    mechanism: "scale affected channel variance about its mean by factor; top level = fully frozen"
+    variance_factor_by_level: [0.50, 0.25, 0.10, 0.00]
+  D9_missing_channel:
+    mechanism: "remove affected channel (set to NaN) -> structural fail-closed; not imputed"
+    severities: [structural]
+optional_D10: "not implemented (excluded; no validated gain-change utility reused)"

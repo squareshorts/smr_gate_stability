@@ -1,0 +1,9 @@
+evidence,status
+Composition theorem,verified
+Composition validation (Spearman 0.988),strong
+Calibration stability (R1 0.944),strong
+Cross-session transport (R1 0.933),strong
+Downstream preservation (R1 -0.0011),pass
+Temporal transition reduction (~15%),limited
+Unchanged/fail-closed behaviour,pass
+Degradation sensitivity (clip/freeze blind),fail

@@ -1,0 +1,21 @@
+condition,passed
+C1_pooled_spearman_ge_0.80,True
+C2_each_dataset_spearman_ge_0.70,True
+C3_pooled_median_ae_le_0.05,True
+C4_dataset_median_ae_le_0.08,True
+C5_pred_decrease_direction_ge_0.80,True
+C6_K5_at_least_0.15_below_K1_each_dataset,True
+C7_at_least_3_criteria_negative,True
+C8_lodo_direction_ge_0.75_each,True
+C9_empirical_hd_agree,True
+pooled_spearman,0.9877
+pooled_median_abs_error,0.0134
+dataset_spearman,"{'ds004444': np.float64(0.991), 'ds004446': np.float64(0.986), 'ds004447': np.float64(0.98)}"
+dataset_median_abs_error,"{'ds004444': 0.014, 'ds004446': 0.009, 'ds004447': 0.014}"
+cond5_pred_decrease_direction_frac,0.8832
+cardinality_drop_by_dataset,"{'ds004444': 0.315, 'ds004446': 0.19, 'ds004447': 0.295}"
+cond7_negative_criteria,"{'Q1_high_beta': True, 'Q2_broadband': True, 'Q3_high_freq_35_45': True, 'Q4_transient': False, 'Q5_channel_inconsistency': True} count=4"
+lodo_direction_accuracy,"{'ds004444': 0.944, 'ds004446': 0.974, 'ds004447': 0.929}"
+empirical_K1_minus_K5,0.2857
+hd_K1_minus_K5,0.269
+VERDICT,GO-LAW

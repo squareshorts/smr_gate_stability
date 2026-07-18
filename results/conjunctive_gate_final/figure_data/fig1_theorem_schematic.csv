@@ -1,0 +1,7 @@
+element,kind
+G1,"existing gate, calibration replicate 1"
+G2,"existing gate, calibration replicate 2"
+A,"added criterion (replicates A1, A2)"
+J_old,Q/(P1+P2-Q)
+J_new,Qc/(P1a+P2b-Qc)
+condition,J_new<=J_old iff c(P1+P2)<=P1a+P2b

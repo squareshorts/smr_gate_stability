@@ -1,0 +1,6 @@
+added_criterion,n_additions,median_delta,pct_reducing
+Q1_high_beta,1710,-0.042,64.7953
+Q2_broadband,1710,-0.0285,58.8304
+Q3_high_freq_35_45,1710,-0.0611,71.2865
+Q4_transient,1710,0.0,16.7836
+Q5_channel_inconsistency,1710,-0.1034,93.8596

@@ -1,0 +1,11 @@
+name,expression
+old_jaccard,J_old = Q/(P1+P2-Q)
+new_jaccard,J_new = Q*c/(P1*a+P2*b-Q*c)
+monotone_condition,J_new <= J_old  iff  c*(P1+P2) <= P1*a+P2*b
+equivalent_form,P1*(a-c) + P2*(b-c) >= 0
+symmetric_corollary,a=b=p  =>  condition reduces to c <= p
+independence_implication,"c<=min(a,b) => condition always holds => non-increasing"
+equality,a=c and b=c (added criterion perfectly reproducible)
+increase_possible,"only if c*(P1+P2) > P1*a+P2*b, impossible under independence; requires dependence"
+K_extension,J_K = prod(q_j)/(prod(p_j1)+prod(p_j2)-prod(q_j)); one-step condition applies recursively
+agreement_relation,"overall=(tp+tn)/n rises via tn; accepted-set Jaccard=tp/(tp+fp+fn) falls; positive agreement tracks Jaccard, negative agreement rises"

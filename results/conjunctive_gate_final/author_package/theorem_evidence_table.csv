@@ -1,0 +1,5 @@
+item,result
+symbolic_identity,exact (sympy)
+factorized_identity_match,1.0
+independence_nonincrease_fraction,0.9998
+dependence_increase_cases,9693

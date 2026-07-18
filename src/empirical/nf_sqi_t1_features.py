@@ -239,4 +239,10 @@ def main():
         f.write("10. `nonstationarity`: Absolute difference in `smr_power` from the previous window.\n")
 
 if __name__ == '__main__':
-    main()
+    # Standalone precursor extraction is deprecated: it wrote to a relative ``outputs/`` path,
+    # processed only ds004447, and is superseded by the canonical pipeline. ``extract_window_features``
+    # remains importable and is reused by the conjunctive-gate degradation pipeline.
+    raise SystemExit(
+        "nf_sqi_t1_features standalone main() is deprecated. Use the canonical pipeline "
+        "(scripts/conjunctive_gate_stability/). This module provides extract_window_features for import."
+    )

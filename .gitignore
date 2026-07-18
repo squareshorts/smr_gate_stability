@@ -2,8 +2,10 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.pytest_tmp/
 .ipynb_checkpoints/
 .venv/
+environments/external_monitor/.venv/
 venv/
 env/
 .env/
@@ -34,7 +36,6 @@ manifests/
 *.log
 *.out
 *.synctex.gz
-*.pdf
 manuscript/*.pdf
 
 # Quarantine / Pending delete
@@ -43,6 +44,8 @@ archive/stale_pending_delete/
 
 # Temporary files and logs
 *.log
+results/baseline_gate_stability/checkpoints/**/*.csv.gz
+results/baseline_gate_stability/checkpoints/**/*.npz
 debug_output.txt
 last_user_content.txt
 last_user_input.json
@@ -58,3 +61,13 @@ cover_letter.*
 response_letters/
 submission_forms/
 private_notes/
+*.pyc
+environments/*/.venv/
+**/.venv/
+data/raw/
+results/**/checkpoints/source_windows/
+.Rproj.user/
+environments/r_figures/.Rlib/
+environments/r_figures/library/
+renv/library/
+renv/staging/

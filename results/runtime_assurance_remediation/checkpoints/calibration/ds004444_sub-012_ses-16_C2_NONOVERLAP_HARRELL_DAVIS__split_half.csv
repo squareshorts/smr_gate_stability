@@ -1,0 +1,2 @@
+dataset,subject,session,method,decision_agreement,accepted_set_jaccard,withheld_set_jaccard,accepted_count_difference,gate_c_windows_per_min_difference,longest_feedback_free_period_difference_s,acceptance_to_withhold_flips,withhold_to_acceptance_flips
+ds004444,sub-012,ses-16,C2_NONOVERLAP_HARRELL_DAVIS,0.9333333333333333,0.1111111111111111,0.9327731092436975,10,5.0,-18.0,3,13

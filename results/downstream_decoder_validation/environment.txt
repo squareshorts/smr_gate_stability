@@ -1,0 +1,4 @@
+Python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+OS: Windows-10-10.0.26200-SP0
+CPU: Intel64 Family 6 Model 170 Stepping 4, GenuineIntel
+Seeds: model=20260715, count_matching=20260716..20260815, bootstrap=20260717, permutation=20260718

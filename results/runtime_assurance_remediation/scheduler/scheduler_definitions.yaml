@@ -1,0 +1,7 @@
+S0_instantaneous: display follows each Gate C decision
+S1_fixed_1s_any: 1 s update; at least one of two monitor windows passed
+S2_fixed_1s_all: 1 s update; both monitor windows passed
+S3_fixed_2s_prop50: 2 s update; at least 50% of four monitor windows passed
+S4_fixed_2s_prop75: 2 s update; at least 75% of four monitor windows passed
+S5_reward_hold_1s: Gate C pass activates reward display for 1 s
+S6_reward_hold_2s: Gate C pass activates reward display for 2 s

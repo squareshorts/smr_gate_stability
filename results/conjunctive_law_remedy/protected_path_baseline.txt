@@ -1,0 +1,4 @@
+protected-path baseline 2026-07-17T14:52:37Z
+raw_exit=1
+crlf_exit=0
+manuscript_exit=0

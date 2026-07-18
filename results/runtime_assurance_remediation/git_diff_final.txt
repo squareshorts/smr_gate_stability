@@ -1,0 +1,6 @@
+.pytest_tmp/test_missing_data_skipped0/out.json
+.pytest_tmp/test_missing_data_skipped0/out.md
+.pytest_tmp/test_synthetic_exact_match0/out.json
+.pytest_tmp/test_synthetic_exact_match0/out.md
+.pytest_tmp/test_synthetic_mismatch0/out.json
+.pytest_tmp/test_synthetic_mismatch0/out.md

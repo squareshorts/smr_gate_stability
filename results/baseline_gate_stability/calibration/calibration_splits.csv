@@ -1,0 +1,4 @@
+split_type,left_definition,right_definition
+first_half_second_half,chronological first half of all usable rest windows,chronological second half of all usable rest windows
+odd_even_nonoverlap,odd members of 1 s nonoverlapping rest sequence,even members of 1 s nonoverlapping rest sequence
+temporal_block_bootstrap_pair,first 10 s block-bootstrap rest draw,second independent 10 s block-bootstrap rest draw

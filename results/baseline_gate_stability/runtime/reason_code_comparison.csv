@@ -1,0 +1,7 @@
+monitor,possible_reason_codes,transparent
+M0_NO_GATE,invalid_input,True
+M1_HIGH_BETA,invalid_input;high_beta,True
+M2_BROADBAND_HIGH_FREQUENCY,invalid_input;broadband;noise_floor,True
+M3_AMPLITUDE_150,invalid_input;amplitude_150,True
+M4_NFSQI_FULL_QUALITY,invalid_input;high_beta;broadband;noise_floor;transient;channel_inconsistency,True
+M5_RIEMANNIAN_POTATO,invalid_covariance;covariance_distance,True

@@ -1,0 +1,6 @@
+family,R1_top_response,R0_top_response,type
+D1_single_channel_broadband,0.5421052631578948,0.8043859649122806,R1 blind spot (top response < 0.60)
+D4_narrowband_20_30,0.5771929824561404,1.0,R1 blind spot (top response < 0.60)
+D6_clipping,0.0,0.3078947368421053,R1 blind spot (top response < 0.60)
+D7_partial_channel_freeze,0.002631578947368421,0.33596491228070174,R1 blind spot (top response < 0.60)
+D8_full_channel_variance_collapse,0.002631578947368421,0.3543859649122807,R1 blind spot (top response < 0.60)

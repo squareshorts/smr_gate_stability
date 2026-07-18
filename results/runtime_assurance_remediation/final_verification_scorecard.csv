@@ -1,0 +1,11 @@
+requirement_id,requirement,status,observed_result,evidence_file
+R1,Batch-streaming decision identity,pass,"22,418 windows; zero decision disagreements",results/runtime_assurance/batch_streaming_conformance_summary.csv
+R2,Batch-streaming reason-code identity,pass,zero reason-code disagreements,results/runtime_assurance/batch_streaming_conformance_summary.csv
+R3,Fail-closed deterministic reference,pass,reference tests preserved,tests/runtime_assurance/test_reference_interlock.py
+R4,Session-checkpointed reproducibility,pass,570/570 method-session checkpoints; zero errors,results/runtime_assurance_remediation/execution_progress.csv
+R5,Repository audit and protected paths,pass,64/64 manual-review files classified; protected diff clean,results/repository_cleanup/cleanup_completion_report.md
+R6,Calibration frozen minimum,fail,best Jaccard 0.667; 29.8% sessions >=0.80,results/runtime_assurance_remediation/calibration/method_success_scorecard.csv
+R7,Sequential readiness,not_run,prohibited by Stage-1 stop rule,results/runtime_assurance_remediation/calibration/calibration_final_report.md
+R8,Corrected scheduler,not_run,prohibited by Stage-1 stop rule,results/runtime_assurance_remediation/calibration/calibration_final_report.md
+R9,External established comparator,not_run,prohibited by Stage-1 stop rule,results/runtime_assurance_remediation/calibration/calibration_final_report.md
+R10,Controlled degradation,not_run,prohibited by Stage-1 stop rule,results/runtime_assurance_remediation/calibration/calibration_final_report.md

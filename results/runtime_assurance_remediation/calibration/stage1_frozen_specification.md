@@ -1,0 +1,3 @@
+# Stage 1 frozen calibration specification
+
+Written before Stage 1 checkpoint aggregation. Methods: C0 current overlapping empirical, C1 nonoverlap empirical, C2 nonoverlap Harrell-Davis, C3 block-subsample empirical, C4 leave-one-subject-out dataset-prior shrinkage. Reference is complete usable rest baseline for the same method. Checkpoints are 15, 30, 60, 90, 120 s and full usable baseline when available. The full row is the reference only and is excluded from pass/fail scoring. Numeric method-duration rows are scored against the full usable baseline. Temporal uncertainty uses 100 resamples of nonoverlapping 10 s rest blocks. No task outcomes, decoder results, or future participant data enter calibration priors.

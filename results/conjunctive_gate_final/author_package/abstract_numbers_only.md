@@ -1,0 +1,20 @@
+sessions: 114
+participants: 57
+datasets: 3
+theorem: J_new<=J_old iff c(P1+P2)<=P1a+P2b
+composition_pooled_spearman: 0.988
+composition_pooled_median_ae: 0.013
+K1_jaccard: 0.915
+K5_jaccard: 0.630
+R0_splithalf_jaccard: 0.707
+R1_splithalf_jaccard: 0.944
+R1_transport_jaccard: 0.933
+R1_natural_vs_nogate: -0.0011
+R1_unchanged_false_withhold: 0.0
+R1_fail_closed_missing: 1.0
+R1_top_severity_common_mode_broadband: 0.96
+R1_top_severity_clipping: 0.0
+R1_top_severity_full_freeze: 0.0
+degradation_verdict: DEGRADATION-FAIL
+package_decision: PACKAGE-GO-B
+readiness: 8.0

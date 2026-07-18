@@ -1,0 +1,11 @@
+quantity,expected,reproduced
+sessions,114,114
+dataset_participant_pairs,57,57
+task_windows,22418,22418
+subsets,31,31
+decision_mismatches,0,0
+pooled_spearman,0.988,0.9877
+pooled_median_abs_error,0.013,0.0134
+K1_median_jaccard,0.915,0.9152
+K5_median_jaccard,0.63,0.6295
+verdict,GO-LAW,GO-LAW

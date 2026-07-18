@@ -1,0 +1,4 @@
+method,C1_pooled_splithalf_ge_0.85,C2_pct80_ge_80,C3_every_dataset_ge_0.80,C4_pooled_exceeds_R0_by_0.10,C5_positive_every_dataset,C6_transport_exceeds_R0_by_0.10,C7_transitions_30pct_lower,C8_no_increase_gap30,C11_p95_latency_lt_10ms,C12_failclosed_deterministic,pooled_median_jaccard,pct80,improve_pooled,transport_improve,trans_reduction_frac,method_gap30_sessions,r0_gap30_sessions,p95_latency_ms,passes_1_8
+R1_MEAN_PERCENTILE,True,True,True,True,True,True,False,True,True,True,0.9442,93.9,0.2371,0.337,0.1479,0,0,4.4379,False
+R2_RMS_PERCENTILE,True,True,True,True,True,True,False,True,True,True,0.9451,93.9,0.2381,0.3358,0.1376,0,0,4.3753,False
+R3_ROBUST_MAHALANOBIS_PERCENTILE,False,False,False,False,False,False,False,True,True,True,0.7351,28.1,0.028,0.0567,-0.1284,0,0,4.7932,False

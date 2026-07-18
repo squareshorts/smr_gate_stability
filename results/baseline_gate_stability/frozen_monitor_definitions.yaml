@@ -1,0 +1,28 @@
+M0_NO_GATE:
+  calibration: none
+  accept: finite_and_structurally_valid
+M1_HIGH_BETA:
+  calibration: subject_session_rest_only
+  threshold: empirical_p75
+  accept: high_beta_power_below_threshold
+M2_BROADBAND_HIGH_FREQUENCY:
+  calibration: subject_session_rest_only
+  thresholds: broadband_power_p75; noise_floor_35_45Hz_p75
+  accept: both_features_below_thresholds
+M3_AMPLITUDE_150:
+  calibration: none
+  threshold_peak_to_peak_volts: 0.000150
+  accept: all_three_channels_peak_to_peak_below_threshold
+M4_NFSQI_FULL_QUALITY:
+  calibration: subject_session_rest_only
+  thresholds: high_beta_p75; broadband_p75; noise_floor_p75; transient_p90; channel_inconsistency_p75
+  accept: all_quality_criteria_pass
+  gate_a_included: false
+M5_ROBUST_COV_DISTANCE_FALLBACK:
+  use_only_if_faithful_rpotato_unavailable: true
+  covariance_regularization: cov_reg=(1-0.10)*cov+0.10*trace(cov)/3*I
+  representation: matrix_log_upper_triangle_with_sqrt2_off_diagonals
+  robust_center: coordinatewise_median_of_rest_log_covariance_vectors
+  distance: euclidean_log_space
+  threshold: empirical_rest_p97.5
+  invalid_or_singular_input: fail_closed

@@ -1,0 +1,2 @@
+monitor,participants,median_accepted_windows_per_min,median_longest_feedback_free_s,median_state_transitions_per_min,accepted_windows_per_min_ci_low,accepted_windows_per_min_ci_high,longest_feedback_free_s_ci_low,longest_feedback_free_s_ci_high,state_transitions_per_min_ci_low,state_transitions_per_min_ci_high,percent_sessions_gap_gt_30s
+M5_RIEMANNIAN_POTATO,57,120.0,0.0,0.0,120.0,120.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,2 @@
+dataset,subject,session,method,decision_agreement,accepted_set_jaccard,withheld_set_jaccard,accepted_count_difference,gate_c_windows_per_min_difference,longest_feedback_free_period_difference_s,acceptance_to_withhold_flips,withhold_to_acceptance_flips
+ds004447,sub-001,ses-01,C4_LOSO_SHRINKAGE,0.9576271186440678,0.5454545454545454,0.9553571428571429,3,3.050847457627119,-5.5,1,4

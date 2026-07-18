@@ -1,0 +1,11 @@
+{
+  "task_windows": 14400,
+  "gate_a": 2455,
+  "gate_b": 1811,
+  "gate_c_strict": 932,
+  "gate_c_inclusive": 933,
+  "high_beta_blocks": 644,
+  "strict_vs_inclusive_ties": 1,
+  "dataset": "ds004444",
+  "sessions": 60
+}

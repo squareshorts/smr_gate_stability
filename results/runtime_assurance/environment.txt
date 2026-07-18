@@ -1,0 +1,5 @@
+Python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+Platform: Windows-10-10.0.26200-SP0
+NumPy: 1.26.4
+Pandas: 2.3.3
+MNE: 1.11.0

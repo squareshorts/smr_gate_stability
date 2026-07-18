@@ -1,0 +1,55 @@
+﻿# Windows-safe final-figure render entry point. THE public command is:
+#   powershell -ExecutionPolicy Bypass -File `
+#     scripts\conjunctive_gate_stability\render_figures_windows.ps1
+# It calls ONLY render_all_figures.R (never individual figure scripts). That entry point
+# renders exactly the figures listed in configs/conjunctive_gate_stability/final_figures.csv.
+# Locates Rscript.exe, ensures ggplot2, renders, verifies non-zero PDFs/PNGs against the
+# manifest, writes R sessionInfo and a render log. Does NOT use Python for scientific figures.
+$ErrorActionPreference = "Stop"
+$here     = Split-Path -Parent $MyInvocation.MyCommand.Path        # scripts/conjunctive_gate_stability
+$repo     = Resolve-Path (Join-Path $here "..\..")
+$figrunR  = Join-Path $here "render_all_figures.R"
+$figOut   = Join-Path $repo "results\conjunctive_gate_final\figures"
+$envDir   = Join-Path $repo "environments\r_figures"
+$log      = Join-Path $envDir "render_log.txt"
+New-Item -ItemType Directory -Force -Path $figOut, $envDir | Out-Null
+
+# 1. locate Rscript.exe
+$rscript = $null
+$cmd = Get-Command Rscript.exe -ErrorAction SilentlyContinue
+if ($cmd) { $rscript = $cmd.Source }
+if (-not $rscript) {
+  $cand = Get-ChildItem "C:\Program Files\R\R-*\bin\Rscript.exe","C:\Program Files\R\R-*\bin\x64\Rscript.exe" -ErrorAction SilentlyContinue |
+          Sort-Object FullName -Descending | Select-Object -First 1
+  if ($cand) { $rscript = $cand.FullName }
+}
+if (-not $rscript) { throw "Rscript.exe not found. Install R or add it to PATH." }
+"Using Rscript: $rscript" | Tee-Object -FilePath $log
+
+# 2. verify/install ggplot2 only if missing (into a repo-local library)
+$rlib = Join-Path $envDir ".Rlib"
+New-Item -ItemType Directory -Force -Path $rlib | Out-Null
+$env:R_FIG_LIB = $rlib
+& $rscript -e "libp<-Sys.getenv('R_FIG_LIB'); if(nzchar(libp)).libPaths(c(libp,.libPaths())); if(!requireNamespace('ggplot2',quietly=TRUE)){install.packages('ggplot2',repos='https://cloud.r-project.org',lib=libp)} else {cat('ggplot2 present\n')}" *>> $log
+
+# 3. render (R_FIG_LIB is inherited by the child Rscript; common.R adds it to .libPaths)
+& $rscript "--file=$figrunR" *>> $log
+
+# 4. write sessionInfo
+& $rscript -e "writeLines(capture.output(sessionInfo()), file.path('$envDir','R_sessionInfo.txt'))" *>> $log
+
+# 5. verify outputs against the figure manifest (not a filename glob)
+$manifest = Join-Path $repo "configs\conjunctive_gate_stability\final_figures.csv"
+if (-not (Test-Path $manifest)) { throw "Missing figure manifest: $manifest" }
+$expected = (Import-Csv $manifest).figure
+$fail = $false
+foreach ($stem in $expected) {
+  foreach ($ext in @("pdf","png")) {
+    $p = Join-Path $figOut "$stem.$ext"
+    if (-not (Test-Path $p)) { "MISSING: $p" | Tee-Object -FilePath $log -Append; $fail = $true }
+    elseif ((Get-Item $p).Length -eq 0) { "ZERO-BYTE: $p" | Tee-Object -FilePath $log -Append; $fail = $true }
+  }
+}
+if ($fail) { throw "Figure render verification failed (missing or zero-byte outputs); see $log" }
+"All figures rendered and non-zero. Output: $figOut" | Tee-Object -FilePath $log -Append
+

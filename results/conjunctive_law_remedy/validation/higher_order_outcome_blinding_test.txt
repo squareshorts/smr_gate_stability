@@ -1,0 +1,6 @@
+HIGHER-ORDER OUTCOME BLINDING TEST
+observed/higher-order columns dropped before reconstruction: ['acceptance_flips', 'negative_agreement', 'obs_accept_g1', 'obs_accept_g2', 'obs_joint_accept', 'observed_jaccard', 'overall_agreement', 'positive_agreement']
+prediction reconstructed only from criterion-level p_j1, p_j2, q_j
+rows compared: 3534
+max |stored_predicted - blind_reconstructed| = 0.000e+00
+RESULT: PASS - prediction is independent of observed higher-order Jaccard

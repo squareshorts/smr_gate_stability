@@ -1,0 +1,33 @@
+file_path,created_or_modified,permitted_or_forbidden,final_action_taken
+results/downstream_decoder_validation/git_status_before.txt,created,permitted,retained
+results/downstream_decoder_validation/frozen_analysis_plan.md,created,permitted,retained
+results/downstream_decoder_validation/data_inventory.csv,created,permitted,retained
+results/downstream_decoder_validation/data_inventory.md,created,permitted,retained
+results/downstream_decoder_validation/blocker_report.md,created,permitted,retained
+results/downstream_decoder_validation/event_label_audit.csv,created,permitted,retained as empty not-run schema
+results/downstream_decoder_validation/fold_definition.csv,created,permitted,retained as empty not-run schema
+results/downstream_decoder_validation/quality_policy_definitions.md,created,permitted,retained
+results/downstream_decoder_validation/retention_by_fold.csv,created,permitted,retained as empty not-run schema
+results/downstream_decoder_validation/retention_by_subject.csv,created,permitted,retained as empty not-run schema
+results/downstream_decoder_validation/decoder_results_all_folds.csv,created,permitted,retained as empty not-run schema
+results/downstream_decoder_validation/decoder_results_by_subject.csv,created,permitted,retained as empty not-run schema
+results/downstream_decoder_validation/primary_contrasts.csv,created,permitted,retained as empty not-run schema
+results/downstream_decoder_validation/count_matched_results.csv,created,permitted,retained as empty not-run schema
+results/downstream_decoder_validation/expanded_roi_results.csv,created,permitted,retained as empty not-run schema
+results/downstream_decoder_validation/leave_one_subject_out_sensitivity.csv,created,permitted,retained as empty not-run schema
+results/downstream_decoder_validation/leave_one_dataset_out_sensitivity.csv,created,permitted,retained as empty not-run schema
+results/downstream_decoder_validation/nonviable_folds.csv,created,permitted,retained as empty not-run schema
+results/downstream_decoder_validation/rpf_implementation_report.md,created,permitted,retained
+results/downstream_decoder_validation/environment.txt,created,permitted,retained
+results/downstream_decoder_validation/run_manifest.json,created,permitted,retained
+results/downstream_decoder_validation/analysis_report.md,created,permitted,retained
+results/downstream_decoder_validation/manuscript_update_notes.md,created,permitted,retained
+results/downstream_decoder_validation/git_diff_final.txt,created,permitted,retained
+results/downstream_decoder_validation/file_change_audit.csv,created,permitted,retained
+scripts/downstream_decoder_validation/__init__.py,created,permitted,retained
+scripts/downstream_decoder_validation/quality_policies.py,created,permitted,retained
+scripts/downstream_decoder_validation/run_all.py,created,permitted,retained
+tests/test_downstream_decoder_validation_preflight.py,created,permitted,retained
+manuscript/,not modified,forbidden,unchanged
+results/final/,not modified,forbidden,unchanged
+results/figure_corrections/,pre-existing untracked outside this analysis,not in scope,preserved unchanged

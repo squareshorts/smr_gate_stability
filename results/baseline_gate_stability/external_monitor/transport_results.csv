@@ -1,0 +1,3 @@
+monitor,direction,participants,median_accepted_set_jaccard,median_overall_agreement,median_transported_longest_feedback_free_s,median_transported_transitions_per_min,accepted_set_jaccard_ci_low,accepted_set_jaccard_ci_high,overall_agreement_ci_low,overall_agreement_ci_high,transported_longest_feedback_free_s_ci_low,transported_longest_feedback_free_s_ci_high,transported_transitions_per_min_ci_low,transported_transitions_per_min_ci_high
+M5_RIEMANNIAN_POTATO,final_to_first,57,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+M5_RIEMANNIAN_POTATO,first_to_final,57,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0

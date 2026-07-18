@@ -1,0 +1,3 @@
+method,pooled_median_splithalf_jaccard,pct_sessions_ge_0.80,ds004444_median,ds004446_median,ds004447_median
+R0_ORIGINAL_AND,0.707,22.8,0.7102,0.8183,0.6667
+R2_RMS_PERCENTILE,0.9451,93.9,0.9438,0.9748,0.9301

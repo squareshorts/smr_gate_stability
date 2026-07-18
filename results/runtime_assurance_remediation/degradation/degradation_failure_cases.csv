@@ -1,0 +1,2 @@
+phase,status,reason
+controlled_degradation,not_run,all-in-one raw run stopped; requires checkpointed implementation

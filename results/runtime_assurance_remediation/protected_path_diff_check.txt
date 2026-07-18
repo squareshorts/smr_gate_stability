@@ -1,0 +1,6 @@
+command: git diff --exit-code -- manuscript results/final
+exit_code: 0
+stdout:
+
+stderr:
+

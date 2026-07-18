@@ -1,0 +1,32 @@
+{
+  "status": "PRIMARY_ANALYSIS_COMPLETED",
+  "repository_commit_at_start": "2062eb33119f1606098fb8e6bd667399fdcd88f8",
+  "branch": "analysis/downstream-decoder-validation",
+  "openneuro_snapshots": {
+    "ds004447": "1.0.1",
+    "ds004444": "1.0.1",
+    "ds004446": "1.0.1"
+  },
+  "commands": [
+    "python scripts/downstream_decoder_validation/acquire_openneuro_inputs.py",
+    "python scripts/downstream_decoder_validation/reproduce_batch_counts.py --dataset <dataset> --out-json results/downstream_decoder_validation/batch_reproduction_<dataset>.json",
+    "python scripts/run_nfsqi_pseudo_online_real_edf.py --dataset <dataset> --out-prefix results/downstream_decoder_validation/replay",
+    "python scripts/downstream_decoder_validation/run_decoder_validation.py",
+    "python scripts/downstream_decoder_validation/summarize_decoder_validation.py",
+    "python scripts/downstream_decoder_validation/run_all.py"
+  ],
+  "seeds": {
+    "model": 20260715,
+    "count_matching": "20260716..20260815 (100 seeds)",
+    "bootstrap": 20260717,
+    "permutation": 20260718
+  },
+  "raw_data_location": "data/raw/openneuro (ignored)",
+  "snapshot_manifest_location": "data/manifests (ignored)",
+  "input_checksums": "results/downstream_decoder_validation/data_acquisition_manifest.csv",
+  "known_limitations": [
+    "No exact expanded central ROI mapping was available in the EDF channel names.",
+    "No verified Riemannian Potato/Field package was available.",
+    "Synthetic perturbation analysis was not run."
+  ]
+}

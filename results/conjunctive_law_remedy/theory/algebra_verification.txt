@@ -1,0 +1,12 @@
+J_old = Q/(P1+P2-Q)
+J_new = Q*c/(P1*a+P2*b-Q*c)
+(J_old-J_new)*den_old*den_new expanded = P1*Q*a - P1*Q*c + P2*Q*b - P2*Q*c
+Q*(P1*a+P2*b - c*(P1+P2)) expanded = P1*Q*a - P1*Q*c + P2*Q*b - P2*Q*c
+identity N == Q*(P1*a+P2*b-c*(P1+P2)) ? True
+=> J_new <= J_old  iff  c*(P1+P2) <= P1*a + P2*b   [since Q>0, dens>0]
+symmetric a=b=p: (P1*p+P2*p) - p*(P1+P2) = 0  => condition reduces to c <= p
+rewrite condition as P1*(a-c) + P2*(b-c) >= 0
+under independence within replicate c=P(A1&A2)<=min(a,b) => a-c>=0 and b-c>=0
+=> condition ALWAYS holds under independence => J_new <= J_old (non-increasing)
+equality iff a=c and b=c (added criterion perfectly reproducible) or P1=P2=0 degenerate
+J=x/(y-x): dJ/dx = y/(x - y)**2 (>0), dJ/dy = -x/(x - y)**2 (<0)

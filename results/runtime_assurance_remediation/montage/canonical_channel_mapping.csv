@@ -1,0 +1,4 @@
+channel,mapping,support
+E36,approximate C3/left sensorimotor vicinity,present in BIDS electrodes.tsv; exact 10-20 name not encoded
+E104,approximate C4/right sensorimotor vicinity,present in BIDS electrodes.tsv; exact 10-20 name not encoded
+E128,approximate Cz/vertex vicinity,present in BIDS electrodes.tsv; exact 10-20 name not encoded

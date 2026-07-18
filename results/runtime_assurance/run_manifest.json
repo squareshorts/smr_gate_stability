@@ -1,0 +1,15 @@
+{
+  "branch": "analysis/runtime-assurance-interlock",
+  "commit": "2062eb33119f1606098fb8e6bd667399fdcd88f8",
+  "datasets": {
+    "ds004447": "1.0.1",
+    "ds004444": "1.0.1",
+    "ds004446": "1.0.1"
+  },
+  "specification_version": "1.0.0-runtime-assurance",
+  "specification_sha256": "ba1706de27a6bbc464c0c42d5c3206b371aec5bf900f609351dae0c265afb98e",
+  "random_seed": 20260719,
+  "raw_data_path": "ignored; see local data directory",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0"
+}

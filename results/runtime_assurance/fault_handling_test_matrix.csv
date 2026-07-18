@@ -1,0 +1,11 @@
+case,expected_behavior,expected_accept
+missing_feature,fail closed with explicit reason,False
+NaN,fail closed with explicit reason,False
+positive_infinity,fail closed with explicit reason,False
+negative_infinity,fail closed with explicit reason,False
+empty_threshold_bundle,fail closed with explicit reason,False
+flat_channel,fail closed with explicit reason,False
+missing_channel,fail closed with explicit reason,False
+short_sample_count,fail closed with explicit reason,False
+wrong_sampling_rate,fail closed with explicit reason,False
+malformed_configuration,fail closed with explicit reason,False

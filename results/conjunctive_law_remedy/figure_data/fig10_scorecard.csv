@@ -1,0 +1,4 @@
+method,C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,n_pass,passes_all_12,splithalf_jaccard,improve_vs_R0,transport_improve,trans_reduction,natural_minus_nogate,countmatched_minus_R0,p95_ms
+R1_MEAN_PERCENTILE,True,True,True,True,True,True,False,True,True,True,True,True,11,False,0.9442,0.2371,0.337,0.1479,-0.0011,0.0042,4.4379
+R2_RMS_PERCENTILE,True,True,True,True,True,True,False,True,True,True,True,True,11,False,0.9451,0.2381,0.3358,0.1376,-0.0009,0.0054,4.3753
+R3_ROBUST_MAHALANOBIS_PERCENTILE,False,False,False,False,False,False,False,True,False,True,True,True,4,False,0.7351,0.028,0.0567,-0.1284,-0.0072,0.003,4.7932

@@ -1,0 +1,7 @@
+claim,assessment,evidence
+deterministic conformance is sufficient for operational reliability,rejected,M1-M4 conformed exactly but differed in calibration/transport stability
+baseline-calibrated gate instability is general,not supported,"only M4 had median split-half Jaccard below 0.80; M1, M2, and M5 did not"
+greater conjunction complexity improves stability,rejected,M4 was least stable; M5 behaved as no gate
+high overall agreement broadly hides low accepted-set agreement,not supported,high-agreement/low-Jaccard sessions were absent or rare
+quality filtering can remove decoder information,supported for M4 in this decoder,M4 minus M1 natural difference -0.0148; CI excludes zero
+any monitor detects true artifacts,unsupported,no independent artifact ground truth

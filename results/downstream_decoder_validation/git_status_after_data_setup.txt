@@ -1,0 +1,11 @@
+Branch: analysis/downstream-decoder-validation
+Raw input location: C:/work/smr_cn_revision/data/raw/openneuro (ignored by .gitignore)
+Full snapshot manifest location: C:/work/smr_cn_revision/data/manifests (ignored by .gitignore)
+
+git status --short after selective acquisition and count reproduction:
+?? results/downstream_decoder_validation/
+?? results/figure_corrections/
+?? scripts/downstream_decoder_validation/
+?? tests/test_downstream_decoder_validation_preflight.py
+
+No raw EDF, sidecar, manifest, or feature cache is reported by Git.
