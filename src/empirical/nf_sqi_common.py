@@ -315,4 +315,4 @@ def bandpower_from_psd(freqs: np.ndarray, psd: np.ndarray, band: tuple[float, fl
     mask = (freqs >= band[0]) & (freqs <= band[1])
     if mask.sum() < 2:
         return float("nan")
-    return float(np.trapz(psd[mask], freqs[mask]))
+    return float(np.trapezoid(psd[mask], freqs[mask]))

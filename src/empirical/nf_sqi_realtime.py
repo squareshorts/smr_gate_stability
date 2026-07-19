@@ -309,7 +309,7 @@ def extract_realtime_features(
         & ~((freqs >= HIGH_BETA_BAND[0]) & (freqs <= HIGH_BETA_BAND[1]))
     )
     broadband_power = (
-        float(np.trapz(psd[broadband_mask], freqs[broadband_mask]))
+        float(np.trapezoid(psd[broadband_mask], freqs[broadband_mask]))
         if broadband_mask.sum() >= 2
         else float("nan")
     )

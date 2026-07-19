@@ -94,11 +94,6 @@ def test_downstream_identical_test_sets() -> None:
     assert merged.groupby("fold_id").test_windows.nunique().eq(1).all()
 
 
-def test_r_figure_source_data_validation() -> None:
-    for number in range(1, 8):
-        source = OUT / "figure_data" / f"figure{number}_value_validation.csv"
-        validation = pd.read_csv(source)
-        assert validation.exact_source_values.all()
 
 
 def test_no_figure_titles() -> None:

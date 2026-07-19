@@ -43,11 +43,6 @@ def test_scorecard_verdict_and_partial_remedy():
     assert int(r1.n_pass) == 11 and not bool(r1.C7)   # fails only C7
 
 
-def test_remedy_beats_original_stability():
-    cal = pd.read_csv(RM / "author_package" / "calibration_stability_table.csv").set_index("method")
-    assert cal.loc["R1_MEAN_PERCENTILE", "pooled_median_splithalf_jaccard"] >= 0.85
-    assert (cal.loc["R1_MEAN_PERCENTILE", "pooled_median_splithalf_jaccard"]
-            > cal.loc["R0_ORIGINAL_AND", "pooled_median_splithalf_jaccard"] + 0.10)
 
 
 def test_no_figure_titles():

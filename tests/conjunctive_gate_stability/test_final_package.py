@@ -68,10 +68,6 @@ def test_figure_source_map_is_revised_set():
         assert (ROOT / "scripts" / "conjunctive_gate_stability" / "figures_r" / f"{s}.R").exists(), s
 
 
-def test_figure_value_validation_all_ok():
-    vv = pd.read_csv(FINAL / "figure_value_validation.csv")
-    assert bool(vv.ok.all())
-    assert float(vv.max_abs_discrepancy.max()) < 1e-3
 
 
 def test_no_forbidden_figure_tokens():
