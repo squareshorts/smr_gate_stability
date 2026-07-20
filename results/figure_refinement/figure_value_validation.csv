@@ -1,0 +1,8 @@
+figure,value_validation_status,source_data_file
+figure1,PASS,f1_theorem.csv
+figure2,PASS,"f2a_pooled.csv, f2b_by_dataset.csv"
+figure3,PASS,"f3a_cardinality.csv, f3b_lattice_points.csv, f3b_lattice_summary.csv"
+figure4,PASS,"f4a_stability_sessions.csv, f4b_transport_points.csv, f4b_transport_summary.csv"
+figure5,PASS,f5_operational_points.csv
+figure6,PASS,"f6a_natural.csv, f6b_countmatched.csv"
+figure7,PASS,"f7a_severity.csv, f7b_paired_top.csv, f7c_controls.csv"

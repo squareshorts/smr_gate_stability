@@ -17,8 +17,21 @@ REPO <- normalizePath(REPO, winslash = "/")
 FD  <- file.path(REPO, "results", "conjunctive_gate_final", "figure_data")
 OUT <- file.path(REPO, "results", "conjunctive_gate_final", "figures")
 
-theme_nf <- function() theme_bw(base_size=10) + theme(plot.title=element_blank(), panel.grid.minor=element_blank())
+theme_nf <- function() {
+  theme_bw(base_size=11) + 
+  theme(
+    plot.title = element_blank(), 
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(color = "grey90", size = 0.3),
+    axis.title = element_text(size=10),
+    axis.text = element_text(size=9),
+    legend.title = element_text(size=9),
+    legend.text = element_text(size=8),
+    plot.tag = element_text(size=12, face="bold")
+  )
+}
 save_fig <- function(p, stem, w=6, h=4){ dir.create(OUT, showWarnings=FALSE, recursive=TRUE)
-  ggsave(file.path(OUT, paste0(stem,".pdf")), p, width=w, height=h, device=cairo_pdf)
+  ggsave(file.path(OUT, paste0(stem,".pdf")), p, width=w, height=h, device=pdf_device)
   ggsave(file.path(OUT, paste0(stem,".png")), p, width=w, height=h, dpi=600) }
 has_patchwork <- requireNamespace("patchwork", quietly=TRUE)
+pdf_device <- if (requireNamespace("ragg", quietly = TRUE)) "cairo_pdf" else grDevices::cairo_pdf

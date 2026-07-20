@@ -1,5 +1,0 @@
-# Final `git diff --name-only`
-
-No tracked files differ from `HEAD`.
-
-The new analysis files remain untracked pending user review. `git diff --name-only` intentionally does not list untracked files.

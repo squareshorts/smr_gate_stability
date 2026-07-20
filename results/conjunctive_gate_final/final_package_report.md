@@ -1,6 +1,6 @@
 # Final package report (submission closure)
 
-**Repository:** C:\work\smr_cn_revision  **Branch:** analysis/conjunctive-gate-final-package  **Base commit:** 2062eb3
+**Repository:** smr_gate_stability  **Branch:** analysis/conjunctive-gate-final-package  **Base commit:** 2062eb3
 **Decision: PACKAGE-GO-B. Readiness: 8.0/10.**
 
 ## 1. Paired R1 - R0 degradation contrasts (participant-grouped, top severity; bootstrap 4000; BH-adjusted)

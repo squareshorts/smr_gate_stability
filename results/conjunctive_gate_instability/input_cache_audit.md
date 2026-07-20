@@ -1,6 +1,6 @@
 # Input cache audit
 
-- Cache directory: `/sessions/wonderful-stoic-hamilton/mnt/smr_cn_revision/results/baseline_gate_stability/checkpoints/features`
+- Cache directory: `results/baseline_gate_stability/checkpoints/features`
 - Sessions found: 114 (expected 114) -> PASS
 - Unique participants: 57 (expected 57) -> PASS
 - Datasets present: ['ds004444', 'ds004446', 'ds004447'] -> PASS

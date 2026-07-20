@@ -17,14 +17,37 @@ labmap<-c(D1_single_channel_broadband="D1 single-ch broadband",D2_common_mode_br
           D6_clipping="D6 clipping",D7_partial_channel_freeze="D7 partial freeze",D8_full_channel_variance_collapse="D8 full freeze")
 long$family<-factor(labmap[long$family],levels=labmap)
 pA<-ggplot(long,aes(severity,response,color=method,shape=method,linetype=method))+
-  geom_line()+geom_point(size=0.9)+facet_wrap(~family,ncol=4)+scale_color_manual(values=CB)+ylim(0,1)+
-  labs(x="Severity level",y="Response rate",color="Method",shape="Method",linetype="Method")+theme_nf()
+  geom_line(linewidth=1.0)+geom_point(size=2.0)+facet_wrap(~family,ncol=4)+scale_color_manual(values=CB)+ylim(0,1)+
+  labs(x="Severity level",y="Response rate",color="Method",shape="Method",linetype="Method")+theme_nf() +
+  theme(legend.position="bottom")
 pc<-read.csv(file.path(FD,"f7b_paired_top.csv")); pc$family<-factor(labmap[pc$family],levels=labmap)
-pB<-ggplot(pc,aes(R1_minus_R0,reorder(family,R1_minus_R0)))+geom_vline(xintercept=0,linetype=2)+
-  geom_pointrange(aes(xmin=ci_low,xmax=ci_high))+
-  labs(x="Top-severity paired R1 - R0 response (95% CI)",y="Degradation family")+theme_nf()
+pB<-ggplot(pc,aes(R1_minus_R0,reorder(family,R1_minus_R0)))+
+  geom_vline(xintercept=0,linetype=2, color="grey70", linewidth=0.5)+
+  geom_pointrange(aes(xmin=ci_low,xmax=ci_high), size=1.0, linewidth=1.0)+
+  labs(x="R1 - R0 withholding difference",y="Degradation family")+theme_nf()
 ct<-read.csv(file.path(FD,"f7c_controls.csv"))
-pC<-ggplot(ct,aes(method,value,fill=control))+geom_col(position="dodge")+scale_fill_manual(values=CB)+ylim(0,1)+
-  labs(x="Method",y="Rate (software/structural controls)",fill=NULL)+theme_nf()+theme(legend.text=element_text(size=7))
-if(has_patchwork){library(patchwork);p<-pA/(pB|pC)+plot_annotation(tag_levels="A");save_fig(p,"figure7_controlled_degradation",9,8)}else{
-  save_fig(pA,"figure7_controlled_degradation_A",9,4);save_fig(pB,"figure7_controlled_degradation_B");save_fig(pC,"figure7_controlled_degradation_C")}
+ct$control_label <- ifelse(grepl("D0", ct$control), "D0 unchanged input:\ndecision reproduced", "D9 missing/invalid input:\nwithheld fail-closed")
+ct$control_label <- factor(ct$control_label, levels = c("D9 missing/invalid input:\nwithheld fail-closed", "D0 unchanged input:\ndecision reproduced"))
+ct$display_label <- sprintf("PASS\n(%.2f)", ct$value)
+pC<-ggplot(ct,aes(method,control_label))+
+  geom_tile(fill="darkslategray4", color="white", linewidth=2)+
+  geom_text(aes(label=display_label), color="white", fontface="bold", size=4)+
+  labs(subtitle="Structural controls", x=NULL, y=NULL, caption="Deterministic validation endpoints; no inferential comparison.")+
+  theme_nf()+
+  theme(
+    axis.line=element_blank(),
+    axis.ticks=element_blank(),
+    panel.grid=element_blank(),
+    panel.border=element_blank(),
+    plot.subtitle=element_text(size=11, face="bold", hjust=0.5),
+    plot.caption=element_text(size=8, hjust=0.5)
+  )
+if(has_patchwork){
+  library(patchwork)
+  p<-pA / (pB | pC) + plot_annotation(tag_levels="A") + plot_layout(heights = c(1.8, 1))
+  save_fig(p,"figure7_controlled_degradation",11,8.5)
+}else{
+  save_fig(pA,"figure7_controlled_degradation_A",11,5)
+  save_fig(pB,"figure7_controlled_degradation_B",5.5,3.5)
+  save_fig(pC,"figure7_controlled_degradation_C",5.5,3.5)
+}

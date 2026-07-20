@@ -1,0 +1,22 @@
+﻿{
+  "title": "Calibration stability in conjunctive EEG quality gates: A composition law and a single-score remedy",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Cescon de Souza, Suzana"
+    },
+    {
+      "name": "Pereira Jr, Antonio"
+    }
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "EEG",
+    "neurofeedback",
+    "signal quality",
+    "calibration stability",
+    "Jaccard similarity",
+    "reproducibility",
+    "controlled degradation"
+  ]
+}

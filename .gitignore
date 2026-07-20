@@ -1,73 +1,59 @@
-# Repositories/Packages
+# Environments
+.venv/
+environments/**/.venv/
+renv/library/
+renv/staging/
+.Rlib/
+.Rhistory
+.RData
+
+# Data
+data/raw/
+*.edf
+
+# Python Caches
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
 .pytest_cache/
 .pytest_tmp/
+
+# Logs and IDE
+*.log
 .ipynb_checkpoints/
-.venv/
-environments/external_monitor/.venv/
-venv/
-env/
-.env/
-
-# Raw Data and Cache
-data/
-raw/
-derivatives/
-manifests/
-*.edf
-*.nwb
-*.zip
-*.7z
-*.tar
-*.tar.gz
-
-# IDE / OS
-.vscode/
 .idea/
-.DS_Store
+.vscode/
 
-# LaTeX / Manuscript build files
+# LaTeX debris
 *.aux
 *.bbl
 *.blg
-*.fdb_latexmk
 *.fls
-*.log
-*.out
+*.fdb_latexmk
 *.synctex.gz
-manuscript/*.pdf
+*.toc
+*.lof
+*.lot
+*.out
 
-# Quarantine / Pending delete
+# Excluded exploratory extension (valid negative result, not part of the manuscript)
+scripts/hybrid_gate_extension/
+results/hybrid_gate_extension/
+
+# Temporary and audit material (not part of the public release)
+.pytest_tmp/
+results/release_audit/
+docs/release_audit/
+results/test_tmp/
+results/conjunctive_gate_final/audit/
+results/downstream_decoder_validation/git_status_before.txt
+results/downstream_decoder_validation/git_status_after_data_setup.txt
+results/downstream_decoder_validation/git_diff_final.txt
+results/downstream_decoder_validation/local_data_search.csv
+results/downstream_decoder_validation/download_preflight.md
+results/runtime_assurance_remediation/git_status_final.txt
+results/runtime_assurance_remediation/git_diff_final.txt
+*release-audit*.zip
+
+# Archived / superseded working material
 archive/
-archive/stale_pending_delete/
-
-# Temporary files and logs
-*.log
-results/baseline_gate_stability/checkpoints/**/*.csv.gz
-results/baseline_gate_stability/checkpoints/**/*.npz
-debug_output.txt
-last_user_content.txt
-last_user_input.json
-py_crash.log
-python_path.txt
-run_output.txt
-stderr.log
-stdout.log
-outputs/
-
-# Ignore old submission files
-cover_letter.*
-response_letters/
-submission_forms/
-private_notes/
-*.pyc
-environments/*/.venv/
-**/.venv/
-data/raw/
-results/**/checkpoints/source_windows/
-.Rproj.user/
-environments/r_figures/.Rlib/
-environments/r_figures/library/
-renv/library/
-renv/staging/
