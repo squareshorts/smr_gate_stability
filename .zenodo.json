@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "Calibration stability in conjunctive EEG quality gates: A composition law and a single-score remedy",
   "upload_type": "software",
   "creators": [
@@ -9,7 +9,9 @@
       "name": "Pereira Jr, Antonio"
     }
   ],
-  "version": "1.0.0",
+  "version": "1.0.5",
+  "access_right": "open",
+  "license": "mit",
   "keywords": [
     "EEG",
     "neurofeedback",
