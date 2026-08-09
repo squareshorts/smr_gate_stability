@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from empirical.nf_sqi_realtime import extract_realtime_features
 from scripts.hybrid_gate_extension.hard_interlocks import compute_hard_interlocks
 
-DATA_DIR = Path(r"C:\work\external_eeg\openbmi")
+DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "openbmi"
 CACHE_DIR = Path(__file__).parent / "cache"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 

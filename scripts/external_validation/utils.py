@@ -5,7 +5,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
-from editor_hardening_audit.engine import (
+from scripts.external_validation.engine import (
     CRITERIA, CRIT_ORDER, nonempty_subsets, subset_id, jaccard, pass_indicators,
     empirical_threshold, channel_inconsistency
 )

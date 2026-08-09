@@ -4,7 +4,7 @@ from tqdm import tqdm
 from itertools import combinations
 from utils import *
 
-from editor_hardening_audit.engine import CRITERIA, CRIT_ORDER, nonempty_subsets, subset_id, jaccard
+from scripts.external_validation.engine import CRITERIA, CRIT_ORDER, nonempty_subsets, subset_id, jaccard
 
 def process():
     files = list(CACHE_DIR.glob("*.parquet"))
