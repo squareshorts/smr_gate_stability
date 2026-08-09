@@ -1,0 +1,9 @@
+Context,Comparison,Median_Diff,CI_2.5,CI_97.5
+Split-Half,Mean - Conj,0.208,0.199,0.263
+Split-Half,RMS - Conj,0.186,0.166,0.222
+Split-Half,H1 - Conj,0.208,0.199,0.263
+Split-Half,H1 - Mean,0.0,0.0,0.0
+Transport,Mean - Conj,0.235,0.223,0.251
+Transport,RMS - Conj,0.192,0.175,0.216
+Transport,H1 - Conj,0.235,0.223,0.251
+Transport,H1 - Mean,0.0,0.0,0.0

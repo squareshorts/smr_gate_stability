@@ -1,0 +1,7 @@
+dataset,sign,count,proportion
+External,Decrease,6253,0.7719753086419753
+External,Increase,1846,0.22790123456790123
+External,Unchanged,1,0.0001234567901234568
+Internal,Decrease,6814,0.7969590643274854
+Internal,Increase,817,0.09555555555555556
+Internal,Unchanged,919,0.10748538011695906

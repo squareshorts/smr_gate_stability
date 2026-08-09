@@ -1,0 +1,17 @@
+Context,Dataset,Method,Jaccard,Lower,Upper
+Split-Half,Internal,Conjunction,0.707,0.6745725317153888,0.7466653924692466
+Split-Half,Internal,Mean,0.944,0.9224137931034484,0.9590163934426228
+Split-Half,Internal,RMS,0.945,0.9241920045045044,0.9566781357522678
+Split-Half,Internal,H1,0.942,0.9203539823008848,0.9580489692535004
+Split-Half,External,Conjunction,0.545,0.513,0.597
+Split-Half,External,Mean,0.807,0.779,0.843
+Split-Half,External,RMS,0.779,0.743,0.815
+Split-Half,External,H1,0.807,0.779,0.843
+Transport,Internal,Conjunction,0.596,,
+Transport,Internal,Mean,0.933,,
+Transport,Internal,RMS,0.932,,
+Transport,Internal,H1,0.929,,
+Transport,External,Conjunction,0.518,0.283,0.414
+Transport,External,Mean,0.786,0.75,0.819
+Transport,External,RMS,0.744,0.686,0.767
+Transport,External,H1,0.786,0.75,0.819

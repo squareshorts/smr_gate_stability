@@ -1,0 +1,11 @@
+Dataset,Cardinality,Jaccard,Lower,Upper
+Internal,1,0.915,0.83,0.87
+Internal,2,0.818,0.75,0.81
+Internal,3,0.746,0.7,0.76
+Internal,4,0.691,0.68,0.74
+Internal,5,0.63,0.68,0.73
+External,1,0.806,0.788,0.827
+External,2,0.7,0.669,0.726
+External,3,0.637,0.609,0.665
+External,4,0.591,0.556,0.628
+External,5,0.545,0.513,0.597
