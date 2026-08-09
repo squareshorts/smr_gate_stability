@@ -1,0 +1,23 @@
+{
+  "families_where_R1_blind_top_severity": [
+    "D0_unchanged",
+    "D6_clipping",
+    "D7_partial_channel_freeze",
+    "D8_full_channel_variance_collapse"
+  ],
+  "families_where_H1_blind_top_severity": [
+    "D0_unchanged"
+  ],
+  "D0_false_withholding": {
+    "R0": 0.0,
+    "R1": 0.0,
+    "R2": 0.0,
+    "H1": 0.06140350877192982
+  },
+  "mean_auc": {
+    "R0": 0.5803362573099415,
+    "R1": 0.39327485380116955,
+    "R2": 0.4257894736842106,
+    "H1": 0.6217251461988303
+  }
+}

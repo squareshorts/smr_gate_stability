@@ -57,3 +57,11 @@ results/runtime_assurance_remediation/git_diff_final.txt
 
 # Archived / superseded working material
 archive/
+
+# Final Cleanup
+scripts/external_validation/cache/
+scripts/external_validation/forensic_verification/
+scripts/external_validation/outputs/
+results/figure_source_data/*.pdf
+results/figure_source_data/*.png
+results/figure_source_data/*.svg
