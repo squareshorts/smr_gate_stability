@@ -1,0 +1,4 @@
+outcome,legacy estimate,legacy p,new estimate,new CI,new raw p,new adjusted p
+C3 SMR Increase,Significant,<0.05,-0.029,"[-0.281, 0.223]",0.820,0.820
+High Beta Suppression,Significant,<0.05,0.098,"[-0.121, 0.317]",0.382,0.765
+C3 PAC Increase,Significant,<0.05,-0.933,"[-2.293, 0.427]",0.179,0.536
